@@ -24,7 +24,7 @@ jobs:
           cp {2022-04-18,1971-01-01}-Fromsoftware-Framepacing.md
           cd -
           # very very ugly workaround
-          # find out why it doesn't work without copy
+          # find out why it doesn't work without copying
           cp -r _patch __patch
           chmod +x .ci/*.sh
           .ci/zip.sh
