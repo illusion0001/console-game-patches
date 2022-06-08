@@ -1,0 +1,20 @@
+name: Push workflow dispatch
+
+on: push
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+
+    if: |
+      github.event_name == 'push' &&
+      github.repository == 'illusion0001/console-game-patches'
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: illusion0001/illusion0001.github.io
+
+      - name: Run Website Workflow dispatch
+        env:
+          GITHUB_TOKEN: ${{ secrets.website }}
+        run: gh workflow run jekyll.yml
