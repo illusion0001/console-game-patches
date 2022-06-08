@@ -31,6 +31,7 @@
         - [ utf8, 0x018031bd, "sm10\x00"]           # igc failure
         - [ utf8, 0x018031c2, "sm12_b\x00\x00"]     # igc failure
         - [ utf8, 0x018031ca, "sm13\x00"]           # igc failure
+        - [ utf8, 0x018031d4, "ep27_co\x00" ]       # igc failure
         # crow
         - [ utf8, 0x018031ad, "dm06_c\x00\x00" ] # igc failure
         - [ utf8, 0x018031b5, "dm06_d\x00\x00" ] # script failure
@@ -86,7 +87,7 @@
         - [ bytes, 0x01802d6c, "c3" ]               # RET
         - [ bytes, 0x01802f75, "488d0d4f000000" ]   # LEA RCX,[0x1802fcb]
         # filter
-        # only save "ep", "sm", "mine", "ft" # free roam # ,"dm" # crow #, "cm" ?
+        # only save "ep", "sm", "mine", "ft" # free roam # ,"dm" # crow #, "cm" # challenge missions #
         - [ bytes, 0x01802f7c, "6641813c24736d" ]   # CMP word ptr [R12],0x6d73
         - [ bytes, 0x01802f83, "7446" ]             # JZ 0x01802fcb
         - [ bytes, 0x01802f85, "6641817c24006674" ] # CMP word ptr [R12 + 0x0],0x7466
@@ -187,29 +188,19 @@
         - [ bytes, 0x0180bfd5, "0f84b0110000" ]   # JZ 0x0180d18b
         - [ bytes, 0x0180bfdb, "48394b72" ]       # CMP qword ptr [RBX + 0x72],RCX
         - [ bytes, 0x0180bfdf, "0f84a6110000" ]   # JZ 0x0180d18b
-        - [ bytes, 0x0180bfe5, "90" ]             # NOP
-        - [ bytes, 0x0180bfe6, "90" ]             # NOP
-        - [ bytes, 0x0180bfe7, "90" ]             # NOP
-        - [ bytes, 0x0180bfe8, "90" ]             # NOP
-        - [ bytes, 0x0180bfe9, "90" ]             # NOP
-        - [ bytes, 0x0180bfea, "90" ]             # NOP
-        - [ bytes, 0x0180bfeb, "90" ]             # NOP
-        - [ bytes, 0x0180bfec, "90" ]             # NOP
-        - [ bytes, 0x0180bfed, "90" ]             # NOP
-        - [ bytes, 0x0180bfee, "90" ]             # NOP
-        - [ bytes, 0x0180bfef, "90" ]             # NOP
-        - [ bytes, 0x0180bff0, "90" ]             # NOP
-        - [ bytes, 0x0180bff1, "48398b88000000" ] # CMP qword ptr [RBX + 0x88],RCX
-        - [ bytes, 0x0180bff8, "0f848d110000" ]   # JZ 0x0180d18b
-        - [ bytes, 0x0180bffe, "48398b90000000" ] # CMP qword ptr [RBX + 0x90],RCX
+        - [ bytes, 0x0180bfe5, "48398b88000000" ] # CMP qword ptr [RBX + 0x88],RCX
+        - [ bytes, 0x0180bfec, "0f8499110000" ]   # JZ 0x0180d18b
+        - [ bytes, 0x0180bff2, "48398b90000000" ] # CMP qword ptr [RBX + 0x90],RCX
+        - [ bytes, 0x0180bff9, "0f848c110000" ]   # JZ 0x0180d18b
+        - [ bytes, 0x0180bfff, "398b98000000" ]   # CMP dword ptr [RBX + 0x98],ECX
         - [ bytes, 0x0180c005, "0f8480110000" ]   # JZ 0x0180d18b
-        - [ bytes, 0x0180c00b, "398b98000000" ]   # CMP dword ptr [RBX + 0x98],ECX
-        - [ bytes, 0x0180c011, "0f8474110000" ]   # JZ 0x0180d18b
-        - [ bytes, 0x0180c017, "48398b9d000000" ] # CMP qword ptr [RBX + 0x9d],RCX
-        - [ bytes, 0x0180c01e, "0f8467110000" ]   # JZ 0x0180d18b
-        - [ bytes, 0x0180c024, "398ba5000000" ]   # CMP dword ptr [RBX + 0xa5],ECX
-        - [ bytes, 0x0180c02a, "0f845b110000" ]   # JZ 0x0180d18b
-        - [ bytes, 0x0180c030, "e959110000" ]     # JMP 0x0180d18e
+        - [ bytes, 0x0180c00b, "48398b9d000000" ] # CMP qword ptr [RBX + 0x9d],RCX
+        - [ bytes, 0x0180c012, "0f8473110000" ]   # JZ 0x0180d18b
+        - [ bytes, 0x0180c018, "398c23a5000000" ] # CMP dword ptr [RBX + 0xa5],ECX
+        - [ bytes, 0x0180c01f, "0f8466110000" ]   # JZ 0x0180d18b
+        - [ bytes, 0x0180c025, "48398baf000000" ] # CMP qword ptr [RBX + 0xaf],RCX
+        - [ bytes, 0x0180c02c, "0f8459110000" ]   # JZ 0x0180d18b
+        - [ bytes, 0x0180c032, "e957110000" ]     # JMP 0x0180d18e
         - [ bytes, 0x0180d18b, "c60001" ]         # MOV byte ptr [RAX],0x1
         - [ bytes, 0x0180d18e, "c3" ]             # RET
         - [ bytes, 0x01803067, "e984000000" ]     # JMP 0x018030f0
