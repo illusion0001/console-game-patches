@@ -7,6 +7,15 @@
   patch_list:
         - [ byte, 0x00d5ca17, 0x1 ]
 
+- game: "Uncharted: Drake's Fortune Remastered (eboot.bin)"
+  app_ver: "01.02"
+  patch_ver: "1.0"
+  name: "Enable Dev Menu"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ byte, 0x004fe1ab, 0x1 ]
+
 - game: "Uncharted 2: Among Thieves Remastered (eboot.bin/big2-ps4_Shipping.elf)"
   app_ver: "01.00"
   patch_ver: "1.0"
@@ -37,6 +46,15 @@
   patch_list:
         - [ byte, 0x0145de94, 0x1 ]
 
+- game: "Uncharted 2: Among Thieves Remastered (eboot.bin/big2-ps4_Shipping.elf)"
+  app_ver: "01.02"
+  patch_ver: "1.0"
+  name: "Enable Dev Menu"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ byte, 0x008d3c0b, 0x1 ]
+
 - game: "Uncharted 3: Drake's Deception Remastered (eboot.bin/big3-ps4_Shipping.elf)"
   app_ver: "01.02"
   patch_ver: "1.0"
@@ -45,3 +63,12 @@
   arch: orbis
   patch_list:
         - [ bytes, 0x009651d0, "c685043a000000" ] # MOV byte ptr [RBP + 0x3a04],0x0
+
+- game: "Uncharted 3: Drake's Deception Remastered (eboot.bin/big3-ps4_Shipping.elf)"
+  app_ver: "01.02"
+  patch_ver: "1.0"
+  name: "Enable Dev Menu"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ byte, 0x0097424b, 0x1 ]
