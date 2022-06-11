@@ -45,15 +45,15 @@
         - [ bytes, 0x0084ddab, "90" ]         # NOP
         # deltatime for game logic
         - [ bytes, 0x0085e9cc, "e8cd43fa00" ]       # CALL 0x01802d9e
-        - [ bytes32, 0x01802d90, 0x49742400 ]       # 1000000.0f # to be div'd
-        - [ bytes64, 0x01802d94, 66667 ]            # Min FPS of 15
+        - [ bytes32, 0x01802d90, 0x49742400 ]       # 1000000.0f # to be used for division
+        - [ bytes64, 0x01802d94, 66667 ]            # Min FPS of 1/15 in int
         - [ bytes, 0x01802d9e, "4889150b533000" ]   # MOV qword ptr [0x01b080b0],RDX
         - [ bytes, 0x01802da5, "48893d0c533000" ]   # MOV qword ptr [0x01b080b8],RDI
         - [ bytes, 0x01802dac, "488b3de1ffffff" ]   # MOV RDI,qword ptr [0x01802d94]
         - [ bytes, 0x01802db3, "488d15b6523000" ]   # LEA RDX,[0x1b08070]
-        - [ bytes, 0x01802dba, "48393d07587500" ]   # CMP qword ptr [0x01f585c8],RDI
         # small optimiaztion
-        # using int before converting and dviding to float should be faster.
+        # using int before converting and dviding to float should be faster
+        - [ bytes, 0x01802dba, "48393d07587500" ]   # CMP qword ptr [0x01f585c8],RDI
         - [ bytes, 0x01802dc1, "771c" ]             # JA 0x01802ddf
         - [ bytes, 0x01802dc3, "803a01" ]           # CMP byte ptr [RDX],0x1
         - [ bytes, 0x01802dc6, "7417" ]             # JZ 0x01802ddf
@@ -67,7 +67,12 @@
         - [ bytes, 0x01802de7, "488b15c2523000" ]   # MOV RDX,qword ptr [0x01b080b0]
         - [ bytes, 0x01802dee, "488b3dc3523000" ]   # MOV RDI,qword ptr [0x01b080b8]
         - [ bytes, 0x01802df5, "c3" ]               # RET
-        # level is loading
+        # UI timesteps
+        # Todo: find menu, map and marker timestep
+        - [ bytes32, 0x018c4934, 0x3c888889 ] # Main Menu
+        - [ bytes32, 0x013e46e8, 0x3c888889 ] # Comics
+        - [ bytes32, 0x018c491c, 0x3c888889 ] # Main Menu Navigation
+        # level is loading (mode 3 for faster loading)
         - [ bytes, 0x013c8f2f, "e8479e4300" ]     # CALL 0x01802d7b
         - [ bytes, 0x013c8f34, "eb1b" ]           # JMP 0x013c8f51
         - [ bytes, 0x01802d7b, "c605ee52300003" ] # MOV byte ptr [0x01b08070],0x3
@@ -182,6 +187,14 @@
         - [ bytes, 0x01833abc, "4c8b1d55462d00" ] # MOV R11,qword ptr [0x01b08118]
         - [ bytes, 0x01833ac3, "c3" ]             # RET
         # level check
+        # optimization plans:
+        # create small function that tests these level names (maybe use strcmp?)
+        # should be able to test full level names (8 bytes max)
+        # structure should be something like
+        # if (CurrentMissionName == SoftlockTable) flip = 30FPS_NoTimestep; // 1
+        # SoftlockTable will RDI
+        # CurrentMissionName will use RAX? (I forgot which is for strcmp params)
+        # if return 0 (it matches) setup our pointer and store it there
         - [ bytes, 0x0180bf48, "48390b" ]         # CMP qword ptr [RBX],RCX
         - [ bytes, 0x0180bf4b, "0f843a120000" ]   # JZ 0x0180d18b
         - [ bytes, 0x0180bf51, "48394b08" ]       # CMP qword ptr [RBX + 0x8],RCX
