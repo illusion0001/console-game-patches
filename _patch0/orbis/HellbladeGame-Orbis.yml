@@ -1,4 +1,5 @@
-- game: "Hellblade: Senua's Sacrifice"
+- patch:
+  title: "Hellblade: Senua's Sacrifice"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Resolution Patch"
@@ -22,7 +23,8 @@
         # 50.0f  = 00 00 48 42
         # 67.0f  = 00 00 86 42
         # 83.33f = F6 A8 A6 42
-- game: "Hellblade: Senua's Sacrifice"
+- patch:
+  title: "Hellblade: Senua's Sacrifice"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Skip Startup Videos"
@@ -31,7 +33,8 @@
   patch_list:
         - [ bytes, 0x1E5C0C2, "48 E9 87 06 00 00" ]
 
-- game: "Hellblade: Senua's Sacrifice"
+- patch:
+  title: "Hellblade: Senua's Sacrifice"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Disable Motion Blur"
@@ -39,7 +42,8 @@
   arch: generic_orbis
   patch_list:
         - [ bytes, 0x178EE71, "EB 40" ] 
-- game: "Hellblade: Senua's Sacrifice"
+- patch:
+  title: "Hellblade: Senua's Sacrifice"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Disable Film Grain"
@@ -48,7 +52,8 @@
   patch_list:
         - [ bytes, 0x156032F, "EB" ]
 
-- game: "Hellblade: Senua's Sacrifice"
+- patch:
+  title: "Hellblade: Senua's Sacrifice"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Disable Post Processing"

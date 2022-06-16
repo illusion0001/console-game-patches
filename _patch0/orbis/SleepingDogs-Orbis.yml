@@ -1,4 +1,5 @@
-- game: "Sleeping Dogs: Definitive Edition"
+- patch:
+  title: "Sleeping Dogs: Definitive Edition"
   app_ver: "01.07"
   patch_ver: "1.0"
   name: "60 FPS Unlock"

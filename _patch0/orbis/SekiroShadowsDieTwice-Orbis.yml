@@ -1,4 +1,5 @@
-- game: "Sekiro: Shadows Die Twice"
+- patch:
+  title: "Sekiro: Shadows Die Twice"
   app_ver: "01.06"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
@@ -13,7 +14,8 @@
         # return;
         - [ bytes, 0x034cdc27, "bf0001114ebe01000000eb12" ]
 
-- game: "Sekiro: Shadows Die Twice"
+- patch:
+  title: "Sekiro: Shadows Die Twice"
   app_ver: "01.06"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -26,7 +28,8 @@
         # VFR
         - [ bytes, 0x023670c3, "48e96b000000" ]
 
-- game: "Sekiro: Shadows Die Twice"
+- patch:
+  title: "Sekiro: Shadows Die Twice"
   app_ver: "01.06"
   patch_ver: "1.0"
   name: Resolution Patch (720p Base, 1080p Pro)

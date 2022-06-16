@@ -1,4 +1,5 @@
-- game: "Days Gone"
+- patch:
+  title: "Days Gone"
   app_ver: "01.81"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -10,7 +11,8 @@
         - [ bytes, 0x00e024d1, "31f6" ]   # XOR ESI,ESI
         - [ bytes, 0x00e1458d, "31f6" ]   # XOR ESI,ESI
 
-- game: "Days Gone"
+- patch:
+  title: "Days Gone"
   app_ver: "01.81"
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"

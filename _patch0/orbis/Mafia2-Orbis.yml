@@ -1,4 +1,5 @@
-- game: "Mafia 2: Definitive Edition"
+- patch:
+  title: "Mafia 2: Definitive Edition"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "60 FPS Unlock"

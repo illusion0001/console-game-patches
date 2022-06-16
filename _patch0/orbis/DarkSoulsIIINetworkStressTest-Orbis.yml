@@ -1,4 +1,5 @@
-- game: "Dark Souls III: Network Stress Test"
+- patch:
+  title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "60 FPS Unlock (With Delta Time)"
@@ -8,7 +9,8 @@
         - [ bytes, 0x0278c407, "c7430805000000eb07" ] # flipmode
         - [ bytes, 0x0278c50c, "41b601" ]             # delta time
 
-- game: "Dark Souls III: Network Stress Test"
+- patch:
+  title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
@@ -21,7 +23,8 @@
         # return;
         - [ bytes, 0x02dbdb44, "488b1ded10f102be01000000eb03" ] # fliprate
 
-- game: "Dark Souls III: Network Stress Test"
+- patch:
+  title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "720p Resolution"

@@ -1,4 +1,5 @@
-- game: "The Evil Within"
+- patch:
+  title: "The Evil Within"
   app_ver: "01.06"
   patch_ver: "1.0"
   name: "60 FPS Unlock"

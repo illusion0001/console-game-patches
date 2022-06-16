@@ -1,4 +1,5 @@
-- game: "Deadpool"
+- patch:
+  title: "Deadpool"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "60 FPS Unlock"

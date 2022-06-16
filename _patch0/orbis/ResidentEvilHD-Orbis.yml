@@ -1,4 +1,5 @@
-- game: "Resident Evil: HD"
+- patch:
+  title: "Resident Evil: HD"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -12,7 +13,8 @@
 # cc implemented game speed/frametime calc based on tickrate (absolute hacks :p) for win32 ver
 # code path still exist which is why this is possible
 
-- game: "Resident Evil: HD"
+- patch:
+  title: "Resident Evil: HD"
   app_ver: "01.01"
   patch_ver: "1.0"
   name: "60 FPS Unlock"

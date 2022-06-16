@@ -1,4 +1,5 @@
-- game: "Fallout 4"
+- patch:
+  title: "Fallout 4"
   app_ver: "01.34"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -7,7 +8,8 @@
   patch_list:
         - [ bytes, 0x10B8FB7, "00 00 00 00" ]
 
-- game: "Fallout 4"
+- patch:
+  title: "Fallout 4"
   app_ver: "01.34"
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"

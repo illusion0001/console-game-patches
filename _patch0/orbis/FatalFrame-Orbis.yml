@@ -1,4 +1,5 @@
-- game: "FATAL FRAME: Maiden of Black Water"
+- patch:
+  title: "FATAL FRAME: Maiden of Black Water"
   app_ver: "01.04"
   app_titleid: [ "CUSA28987" ]
   patch_ver: "1.0"
@@ -8,7 +9,8 @@
   patch_list:
         - [ bytes, 0x007b2f90, "48b83c00000001000000" ] # MOV RAX,0x10000003c # sleep RenderThread for 16.67ms
 
-- game: "FATAL FRAME: Maiden of Black Water"
+- patch:
+  title: "FATAL FRAME: Maiden of Black Water"
   app_ver: "01.04"
   app_titleid: [ "CUSA28987" ]
   patch_ver: "1.0"

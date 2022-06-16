@@ -1,4 +1,5 @@
-- game: "Vampyr"
+- patch:
+  title: "Vampyr"
   app_ver: "01.07"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -7,7 +8,8 @@
   patch_list:
         - [ bytes, 0x32C3726, "EB 69" ]
 
-- game: "Vampyr"
+- patch:
+  title: "Vampyr"
   app_ver: "01.07"
   patch_ver: "1.0"
   name: "Resolution Patch"

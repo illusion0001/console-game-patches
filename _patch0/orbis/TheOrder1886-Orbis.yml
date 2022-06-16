@@ -1,4 +1,5 @@
-- game: "The Order 1886"
+- patch:
+  title: "The Order 1886"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -18,7 +19,8 @@
         # on base hw.
         # r13d loads into edx, which i think is param for SubmitFlip.
 
-- game: "The Order 1886"
+- patch:
+  title: "The Order 1886"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Resolution Patch (900p)"
@@ -29,7 +31,8 @@
         - [ bytes, 0x450EFD, "40 06 00 00" ]
         - [ bytes, 0x450F07, "84 03 00 00" ]
 
-- game: "The Order 1886"
+- patch:
+  title: "The Order 1886"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "16:9 Aspect Ratio (Full Screen)"

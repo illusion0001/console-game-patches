@@ -1,4 +1,5 @@
-- game: "Tekken 7"
+- patch:
+  title: "Tekken 7"
   app_ver: "04.00"
   patch_ver: "1.0"
   name: "Disable Post Processing"

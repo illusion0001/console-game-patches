@@ -1,4 +1,5 @@
-- game: "Bloodborne"
+- patch:
+  title: "Bloodborne"
   app_ver: "01.09"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
@@ -11,7 +12,8 @@
         # return;
         - [ bytes, 0x02ad61df, "be010000004989dc9090909090" ]
 
-- game: "Bloodborne"
+- patch:
+  title: "Bloodborne"
   app_ver: "01.09"
   patch_ver: "1.0"
   name: "Disable Chromatic Aberration"
@@ -20,7 +22,8 @@
   patch_list:
         - [ bytes, 0x0269faa8, "c783ac000000000000009090" ]
 
-- game: "Bloodborne"
+- patch:
+  title: "Bloodborne"
   app_ver: "01.09"
   patch_ver: "1.0"
   name: "Disable Motion Blur"
@@ -29,7 +32,8 @@
   patch_list:
         - [ bytes, 0x026a057b, "eb16" ]
 
-- game: "Bloodborne"
+- patch:
+  title: "Bloodborne"
   app_ver: "01.09"
   patch_ver: "1.0"
   name: "60 FPS (With Deltatime)"
@@ -186,7 +190,8 @@
         - [ utf16, 0x04cb39ea, "This 60fps patch was\x00\x00" ]
         - [ utf16, 0x04cb39a4, "Made with love, by Lance McDonald\x00\x00" ]
 
-- game: "Bloodborne"
+- patch:
+  title: "Bloodborne"
   app_ver: "01.09"
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"

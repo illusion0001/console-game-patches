@@ -1,4 +1,5 @@
-- game: "Uncharted: The Lost Legacy"
+- patch:
+  title: "Uncharted: The Lost Legacy"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Intro Skip"

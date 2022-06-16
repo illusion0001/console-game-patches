@@ -1,4 +1,5 @@
-- game: "Daymare 1998"
+- patch:
+  title: "Daymare 1998"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -9,7 +10,8 @@
         # Skips: bSmoothFrameRate
         # This patch disables all of it, see preview image for significant improvemnt.
 
-- game: "Daymare 1998"
+- patch:
+  title: "Daymare 1998"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "30 FPS Fix"
@@ -20,7 +22,8 @@
         - [ bytes, 0xE85D82, "67 E8 0F FB 6E 01 90 90" ] 
         - [ bytes, 0x2575897, "41 C7 04 8E 02 00 00 00 41 8B 1C 8E C5 EB 2A C3 C3" ]
 
-- game: "Daymare 1998"
+- patch:
+  title: "Daymare 1998"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"

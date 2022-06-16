@@ -1,4 +1,5 @@
-- game: "Life is Strange: True Colors"
+- patch:
+  title: "Life is Strange: True Colors"
   app_ver: "01.05"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -7,7 +8,8 @@
   patch_list:
         - [ bytes, 0x414B742, "EB 07" ]
 
-- game: "Life is Strange: True Colors"
+- patch:
+  title: "Life is Strange: True Colors"
   app_ver: "01.05"
   patch_ver: "1.0"
   name: "60 FPS Unlock"

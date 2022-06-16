@@ -1,4 +1,5 @@
-- game: "Crash Team Racing Nitro-Fueled"
+- patch:
+  title: "Crash Team Racing Nitro-Fueled"
   app_ver: "01.20"
   patch_ver: "1.0"
   name: "60 FPS Unlock"

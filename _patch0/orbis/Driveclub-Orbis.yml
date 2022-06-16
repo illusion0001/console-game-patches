@@ -1,4 +1,5 @@
-- game: Driveclub
+- patch:
+  title: Driveclub
   app_ver: "01.28"
   patch_ver: "2.0"
   name: "60 FPS"

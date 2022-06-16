@@ -1,4 +1,5 @@
-- game: "Resident Evil 3"
+- patch:
+  title: "Resident Evil 3"
   app_ver: "01.05"
   patch_ver: "1.0"
   name: "Resolution Patch"

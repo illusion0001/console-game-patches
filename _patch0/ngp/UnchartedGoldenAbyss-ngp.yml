@@ -1,4 +1,5 @@
-- game: "Uncharted: Golden Abyss"
+- patch:
+  title: "Uncharted: Golden Abyss"
   app_ver: "01.03"
   patch_ver: "1.0"
   name: "Intro Skip"
@@ -8,7 +9,8 @@
   patch_list:
         - [ bytes16, 0x810011d2, 0x5460 ]
 
-- game: "Uncharted: Golden Abyss"
+- patch:
+  title: "Uncharted: Golden Abyss"
   app_ver: "01.03"
   patch_ver: "1.0"
   name: "Enable Debug Menu"

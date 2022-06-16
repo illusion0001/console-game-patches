@@ -1,4 +1,5 @@
-- game: "Alien: Isolation"
+- patch:
+  title: "Alien: Isolation"
   app_ver: "01.04"
   patch_ver: "1.0"
   name: "Skip Save Confirm Screen"
@@ -8,7 +9,8 @@
   patch_list:
         - [ bytes, 0x19BE0A, "EB" ]
 
-- game: "Alien: Isolation"
+- patch:
+  title: "Alien: Isolation"
   app_ver: "01.04"
   patch_ver: "1.0"
   name: "Custom FOV (100.0)"

@@ -1,4 +1,5 @@
-- game: "Ratchet and Clank"
+- patch:
+  title: "Ratchet and Clank"
   app_ver: "01.09"
   patch_ver: "1.0"
   name: "60 FPS Unlock"

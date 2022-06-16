@@ -1,4 +1,5 @@
-- game: "The Sinking City"
+- patch:
+  title: "The Sinking City"
   app_ver: "01.04"
   patch_ver: "1.0"
   name: "Resolution Patch"

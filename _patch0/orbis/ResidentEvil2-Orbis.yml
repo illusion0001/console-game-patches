@@ -1,4 +1,5 @@
-- game: "Resident Evil 2"
+- patch:
+  title: "Resident Evil 2"
   app_ver: "01.05"
   patch_ver: "1.0"
   name: "Resolution Patch"
@@ -13,7 +14,8 @@
 # 2880x1620 => 1920x1080
 # 00 00 80 3F = 1.00f (default)
 # 1F 85 2B 3F = 0.67f
-- game: "Resident Evil 2"
+- patch:
+  title: "Resident Evil 2"
   app_ver: "01.05"
   patch_ver: "1.0"
   name: "30 FPS Limit (Proper Frame-Pacing)"

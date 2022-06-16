@@ -1,4 +1,5 @@
-- game: "Resident Evil: Zero"
+- patch:
+  title: "Resident Evil: Zero"
   app_ver: "01.01"
   patch_ver: "1.0"
   name: "60 FPS Unlock"

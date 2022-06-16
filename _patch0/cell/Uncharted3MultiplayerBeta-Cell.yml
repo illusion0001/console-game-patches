@@ -1,4 +1,5 @@
-- game: "Uncharted 3: Drake's Deception Multiplayer Beta"
+- patch:
+  title: "Uncharted 3: Drake's Deception Multiplayer Beta"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Unlock Main Menu, Crash Fix and Disable Uncharted TV"
@@ -35,7 +36,8 @@
         - [ bytes32, 0x00cea328, 0x88090078 ]
         - [ bytes32, 0x00cea32c, 0x4e800020 ]
 
-- game: "Uncharted 3: Drake's Deception Multiplayer Beta"
+- patch:
+  title: "Uncharted 3: Drake's Deception Multiplayer Beta"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Disable Camera Sprint"

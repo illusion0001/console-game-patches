@@ -1,4 +1,5 @@
-- game: "Ghost of Tsushima: Director's Cut"
+- patch:
+  title: "Ghost of Tsushima: Director's Cut"
   app_ver: "02.13"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -9,7 +10,8 @@
   patch_list:
         - [ bytes, 0x707B1A, "EB 12" ]
 
-- game: "Ghost of Tsushima: Director's Cut"
+- patch:
+  title: "Ghost of Tsushima: Director's Cut"
   app_ver: "02.13"
   patch_ver: "1.0"
   name: "900p for Pro"
@@ -20,7 +22,8 @@
         - [ bytes, 0x706BD1, "40 06 00 00" ]
         - [ bytes, 0x706BD5, "84 03 00 00" ]
 
-- game: "Ghost of Tsushima: Director's Cut"
+- patch:
+  title: "Ghost of Tsushima: Director's Cut"
   app_ver: "02.13"
   patch_ver: "1.0"
   name: "Disable Checkerboarding"

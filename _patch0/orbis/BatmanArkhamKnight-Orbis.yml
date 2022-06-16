@@ -1,4 +1,5 @@
-- game: "Batman: Arkham Knight"
+- patch:
+  title: "Batman: Arkham Knight"
   app_ver: "01.14"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
@@ -19,7 +20,8 @@
         # 03 double buffer adaptive sync // default
         # 04 triple buffering
 
-- game: "Batman: Arkham Knight"
+- patch:
+  title: "Batman: Arkham Knight"
   app_ver: "01.14"
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"

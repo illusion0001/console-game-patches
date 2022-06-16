@@ -1,4 +1,5 @@
-- game: "MediEvil"
+- patch:
+  title: "MediEvil"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
@@ -9,7 +10,8 @@
         - [ bytes, 0x21B3832, "C7 04 8B 00 00 86 42 C5 FA 10 04 8B C3" ]
         # 00 00 86 42 # 67.0f
         # 83% should be enough for neo 60fps
-- game: "MediEvil"
+- patch:
+  title: "MediEvil"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"

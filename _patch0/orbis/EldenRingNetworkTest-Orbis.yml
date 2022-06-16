@@ -1,4 +1,5 @@
-- game: "Elden Ring: Network Test"
+- patch:
+  title: "Elden Ring: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "60 FPS Unlock (For Base)"
@@ -13,7 +14,8 @@
         - [ bytes, 0x01ff26c6, "90" ]                   # NOP
         - [ bytes, 0x01ff26c7, "90" ]                   # NOP
 
-- game: "Elden Ring: Network Test"
+- patch:
+  title: "Elden Ring: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
@@ -37,7 +39,8 @@
         - [ bytes, 0x034dc50e, "e8edf8d8ff" ] # CALL 0x0326be00
         - [ bytes, 0x034dc513, "c3" ]         # RET
 
-- game: "Elden Ring: Network Test"
+- patch:
+  title: "Elden Ring: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base, 1080p for Pro)"
@@ -51,7 +54,8 @@
         - [ bytes, 0x01fe105f, 1920 ]
         - [ bytes, 0x01fe1069, 1080 ]
 
-- game: "Elden Ring: Network Test"
+- patch:
+  title: "Elden Ring: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Bypass Network Check"
@@ -61,7 +65,8 @@
         - [ bytes, 0x018863c0, "b001" ] # MOV AL,0x1
         - [ bytes, 0x018863c2, "c3" ]   # RET
 
-- game: "Elden Ring: Network Test"
+- patch:
+  title: "Elden Ring: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Disable Fog Wall"
@@ -74,7 +79,8 @@
         - [ bytes, 0x017b7c36, "90" ] # NOP
         - [ bytes, 0x017b7c37, "90" ] # NOP
 
-- game: "Elden Ring: Network Test"
+- patch:
+  title: "Elden Ring: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Enable Video Recording and Screenshots"

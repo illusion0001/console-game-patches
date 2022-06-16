@@ -1,4 +1,5 @@
-- game: "Gravity Rush 2 (Gravity Daze 2)"
+- patch:
+  title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   patch_ver: "3.0"
   name: "60 FPS"
@@ -307,7 +308,8 @@
         - [ bytes, 0x01832f16, "e88c0b0000" ]     # CALL 0x01833aa7
         - [ bytes, 0x01832f1b, "c3" ]             # RET
 
-- game: "Gravity Rush 2 (Gravity Daze 2)"
+- patch:
+  title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   patch_ver: "1.0"
   name: "Infinite Gravity Energy"
@@ -316,7 +318,8 @@
   patch_list:
         - [ bytes, 0x00901c26, "c5fa10058a68fb00" ] # VMOVSS XMM0,dword ptr [0x018b84b8]
 
-- game: "Gravity Rush 2 (Gravity Daze 2)"
+- patch:
+  title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   patch_ver: "1.0"
   name: "Most attacks does not hurt player"
@@ -325,7 +328,8 @@
   patch_list:
         - [ bytes, 0x009091a6, "9090909090" ] # NOP x5
 
-- game: "Gravity Rush 2 (Gravity Daze 2)"
+- patch:
+  title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   patch_ver: "1.0"
   name: "Unlock All Costumes"

@@ -1,4 +1,5 @@
-- game: "Bloodborne: Network Test"
+- patch:
+  title: "Bloodborne: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
@@ -11,7 +12,8 @@
         # return;
         - [ bytes, 0x02908da2, "be0100000089c79090909090" ]
 
-- game: "Bloodborne: Network Test"
+- patch:
+  title: "Bloodborne: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "60 FPS (with Deltatime)"
@@ -38,7 +40,8 @@
         - [ bytes, 0x02ae2592, "4c8b15af71d003  " ] # MOV R10,qword ptr [0x067e9748] // restore
         - [ bytes, 0x02ae2599, "c3              " ] # RET
 
-- game: "Bloodborne: Network Test"
+- patch:
+  title: "Bloodborne: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
@@ -52,7 +55,8 @@
         - [ byte, 0x056b1410, 0x0 ]
         - [ byte, 0x056b1440, 0x0 ]
 
-- game: "Bloodborne: Network Test"
+- patch:
+  title: "Bloodborne: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Disable Chromatic Aberration"
@@ -61,7 +65,8 @@
   patch_list:
         - [ bytes, 0x01905491, "48b100" ] # MOV CL,0x0
 
-- game: "Bloodborne: Network Test"
+- patch:
+  title: "Bloodborne: Network Test"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Disable Motion Blur"

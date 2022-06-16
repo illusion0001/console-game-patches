@@ -1,4 +1,5 @@
-- game: "The Last of Us: Remastered"
+- patch:
+  title: "The Last of Us: Remastered"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Improved Loading Times"
@@ -11,7 +12,8 @@
         - [ bytes, 0x013303c9, "c6403001" ]       # MOV byte ptr [RAX + 0x30],0x1
         - [ bytes, 0x013303cd, "c3" ]             # RET
 
-- game: "The Last of Us: Remastered"
+- patch:
+  title: "The Last of Us: Remastered"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Infected's Severed Head Crash Bug Fix"
@@ -31,7 +33,8 @@
         - [ bytes, 0x00e5e68d, "488b4340" ]       # MOV RAX,qword ptr [RBX + 0x40]
         - [ bytes, 0x00e5e691, "c3" ]             # RET
 
-- game: "The Last of Us: Remastered"
+- patch:
+  title: "The Last of Us: Remastered"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
@@ -112,7 +115,8 @@
         - [ utf8, 0x018a8f98, "baseball-bat                   " ]
         - [ utf8, 0x018a8fb8, "hatchet                        " ]
 
-- game: "The Last of Us: Remastered"
+- patch:
+  title: "The Last of Us: Remastered"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Intro Skip"
@@ -121,7 +125,8 @@
   patch_list:
         - [ bytes, 0x00401c22, "c687a534000001" ]
 
-- game: "The Last of Us: Remastered"
+- patch:
+  title: "The Last of Us: Remastered"
   app_ver: "01.11"
   patch_ver: "1.0"
   name: "Intro Skip"
@@ -130,7 +135,8 @@
   patch_list:
         - [ bytes, 0x0040214a, "c687e534000001" ] # MOV byte ptr [RDI + 0x34e5],0x1
 
-- game: "The Last of Us: Remastered"
+- patch:
+  title: "The Last of Us: Remastered"
   app_ver: "01.11"
   patch_ver: "1.0"
   name: "Infected's Severed Head Crash Bug Fix"
@@ -150,7 +156,8 @@
         - [ bytes, 0x01021bdd, "488b4340" ]       # MOV RAX,qword ptr [RBX + 0x40]
         - [ bytes, 0x01021be1, "c3" ]             # RET
 
-- game: "The Last of Us: Remastered"
+- patch:
+  title: "The Last of Us: Remastered"
   app_ver: "01.11"
   patch_ver: "1.0"
   name: "University Nailbomb Softlock Fix"
@@ -178,7 +185,8 @@
         - [ bytes, 0x00476090, "0f851bc76200" ]   # JNZ 0x00aa27b1
         - [ bytes, 0x00476096, "e91cc96200" ]     # JMP 0x00aa29b7
 
-- game: "The Last of Us: Remastered"
+- patch:
+  title: "The Last of Us: Remastered"
   app_ver: "01.11"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
@@ -187,7 +195,8 @@
   patch_list:
         - [ byte, 0x004021a4, 0x75 ]
 
-- game: "The Last of Us: Remastered"
+- patch:
+  title: "The Last of Us: Remastered"
   app_ver: "01.11"
   patch_ver: "1.0"
   name: "Give Player Weapon Fix"

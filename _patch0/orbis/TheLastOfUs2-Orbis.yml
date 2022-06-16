@@ -1,4 +1,5 @@
-- game: "The Last of Us: Part II"
+- patch:
+  title: "The Last of Us: Part II"
   app_ver: "01.09"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
@@ -7,7 +8,8 @@
   patch_list:
         - [ byte, 0x00a141f8, 0x75 ]
 
-- game: "The Last of Us: Part II"
+- patch:
+  title: "The Last of Us: Part II"
   app_ver: "01.09"
   patch_ver: "1.0"
   name: "Increase Dev Menu Size"
@@ -16,7 +18,8 @@
   patch_list:
         - [ float32, 0x00ba0ecf, 1.0 ]
 
-- game: "The Last of Us: Part II"
+- patch:
+  title: "The Last of Us: Part II"
   app_ver: "01.07"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
@@ -25,7 +28,8 @@
   patch_list:
         - [ byte, 0x005d26b8, 0x75 ]
 
-- game: "The Last of Us: Part II"
+- patch:
+  title: "The Last of Us: Part II"
   app_ver: "01.07"
   patch_ver: "1.0"
   name: "Increase Dev Menu Size"
@@ -34,7 +38,8 @@
   patch_list:
         - [ float32, 0x0075f70f, 1.0 ]
 
-- game: "The Last of Us: Part II"
+- patch:
+  title: "The Last of Us: Part II"
   app_ver: "01.07"
   patch_ver: "1.0"
   name: "Improved Infinite Ammo Cheat"

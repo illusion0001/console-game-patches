@@ -1,4 +1,5 @@
-- game: "Need for Speed: Rivals"
+- patch:
+  title: "Need for Speed: Rivals"
   app_ver: "01.04"
   patch_ver: "1.0"
   name: "60 FPS Unlock (Proof of Concept)"
@@ -10,7 +11,8 @@
         - [ bytes, 0x5F6906, "48 E8 94 0D 91 01" ]
         - [ bytes, 0x1F076A0, "41 C7 46 28 00 00 70 42 C4 81 7A 10 46 28 C3" ]
 
-- game: "Need for Speed: Rivals"
+- patch:
+  title: "Need for Speed: Rivals"
   app_ver: "01.04"
   patch_ver: "1.0"
   name: "Resolution Patch"

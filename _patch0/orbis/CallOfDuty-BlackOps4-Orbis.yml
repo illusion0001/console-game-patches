@@ -1,4 +1,5 @@
-- game: "Call of Duty: Black Ops 4 (IIII)"
+- patch:
+  title: "Call of Duty: Black Ops 4 (IIII)"
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Skip Update Reqiured Screen"

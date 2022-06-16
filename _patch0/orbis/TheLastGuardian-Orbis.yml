@@ -1,4 +1,5 @@
-- game: The Last Gurdian
+- patch:
+  title: The Last Gurdian
   app_ver: "01.03"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
