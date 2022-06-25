@@ -6,13 +6,9 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        # Flipmode
-        - [ bytes, 0x01ff26b5, "48b90900000009000000" ] # MOV RCX,0x900000009
-        - [ bytes, 0x01ff26bf, "b805000000" ]           # MOV EAX,0x5
-        - [ bytes, 0x01ff26c4, "90" ]                   # NOP
-        - [ bytes, 0x01ff26c5, "90" ]                   # NOP
-        - [ bytes, 0x01ff26c6, "90" ]                   # NOP
-        - [ bytes, 0x01ff26c7, "90" ]                   # NOP
+        - [ bytes, 0x01ff26b5, "48b90900000009000000" ]
+        - [ bytes, 0x01ff26bf, "b805000000" ]
+        - [ bytes, 0x01ff26c4, "eb06" ]
 
 - patch:
   title: "Elden Ring: Network Test"
@@ -23,21 +19,11 @@
   note: "Caps framerate to 30 with proper frame pacing."
   arch: orbis
   patch_list:
-        # Flipmode
-        - [ bytes, 0x01ff26b5, "48b90900000009000000" ] # MOV RCX,0x900000009
-        - [ bytes, 0x01ff26bf, "b805000000" ]           # MOV EAX,0x5
-        - [ bytes, 0x01ff26c4, "90" ]                   # NOP
-        - [ bytes, 0x01ff26c5, "90" ]                   # NOP
-        - [ bytes, 0x01ff26c6, "90" ]                   # NOP
-        - [ bytes, 0x01ff26c7, "90" ]                   # NOP
-        # Call
-        - [ bytes, 0x0313eff0, "e80fd53900" ] # CALL 0x034dc504
-        # Main code
-        - [ bytes, 0x034dc503, "00" ]         # ?? 00h
-        - [ bytes, 0x034dc504, "bf0001114e" ] # MOV EDI,0x4e110100
-        - [ bytes, 0x034dc509, "be01000000" ] # MOV ESI,0x1
-        - [ bytes, 0x034dc50e, "e8edf8d8ff" ] # CALL 0x0326be00
-        - [ bytes, 0x034dc513, "c3" ]         # RET
+        - [ bytes, 0x01ff26b5, "48b90900000009000000" ]
+        - [ bytes, 0x01ff26bf, "b805000000" ]
+        - [ bytes, 0x01ff26c4, "eb06" ]
+        - [ bytes, 0x0313efec, "4489f6" ]
+        - [ bytes, 0x0313efef, "90" ]
 
 - patch:
   title: "Elden Ring: Network Test"
