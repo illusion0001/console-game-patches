@@ -1,0 +1,27 @@
+- patch:
+  title: "Elden Ring"
+  app_ver: "01.00"
+  patch_ver: "1.0"
+  name: "60 FPS (For Base Console)"
+  author: "illusion"
+  note: "Unlocks framerate on Base/Slim PS4"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x02021e32, "48b90900000009000000" ]
+        - [ bytes, 0x02021e3c, "b805000000" ]
+        - [ bytes, 0x02021e41, "eb06" ]
+
+- patch:
+  title: "Elden Ring"
+  app_ver: "01.00"
+  patch_ver: "1.0"
+  name: "30 FPS Fix (Proper Frame Pacing)"
+  author: "illusion"
+  note: "Fixes Framepacing issues and caps framerate to 30FPS."
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x02021e32, "48b90900000009000000" ]
+        - [ bytes, 0x02021e3c, "b805000000" ]
+        - [ bytes, 0x02021e41, "eb06" ]
+        - [ bytes, 0x031650dc, "4489f6" ]
+        - [ bytes, 0x031650df, "90" ]
