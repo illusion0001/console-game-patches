@@ -58,3 +58,24 @@
   patch_list:
         - [ bytes, 0x02014669, "c705d946240280070000" ]
         - [ bytes, 0x02014673, "c705d346240238040000" ]
+
+- patch:
+  title: "Elden Ring"
+  app_ver: "01.00"
+  patch_ver: "1.0"
+  name: "Enable MenuMan.EnableTopMenuDebug"
+  author: "illusion"
+  note: "Enables Menu Debug, scroll to below system to access during gameplay. (it doesn't have an icon)"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x0203064b, "b801000000" ]
+
+- patch:
+  title: "Elden Ring"
+  app_ver: "01.00"
+  patch_ver: "1.0"
+  name: "Skip Intro Logos"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ byte, 0x01c6cfaa, 0x1 ]
