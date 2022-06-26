@@ -1,6 +1,16 @@
 - patch:
   title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
+  patch_ver: "1.0"
+  name: "Skip Intro Logos"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ byte, 0x01378a40, 0xc3 ]
+
+- patch:
+  title: "Gravity Rush 2 (Gravity Daze 2)"
+  app_ver: "01.11"
   patch_ver: "3.0"
   name: "60 FPS"
   author: "illusion"
