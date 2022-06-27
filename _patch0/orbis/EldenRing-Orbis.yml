@@ -30,23 +30,23 @@
   title: "Elden Ring"
   app_ver: "01.00"
   patch_ver: "1.0"
-  name: "Resolution Patch (900p for Base)"
+  name: "Resolution Patch (720p for Base)"
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ bytes, 0x04258d4c, 1600 ]
-        - [ bytes, 0x04258d48, 900  ]
+        - [ bytes32, 0x04258d48, 1280 ]
+        - [ bytes32, 0x04258d4c, 720  ]
 
 - patch:
   title: "Elden Ring"
   app_ver: "01.00"
   patch_ver: "1.0"
-  name: "Resolution Patch (720p for Base)"
+  name: "Resolution Patch (900p for Base)"
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ bytes, 0x04258d4c, 1280 ]
-        - [ bytes, 0x04258d48, 720  ]
+        - [ bytes32, 0x04258d48, 1600 ]
+        - [ bytes32, 0x04258d4c, 900  ]
 
 - patch:
   title: "Elden Ring"
@@ -56,8 +56,8 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ bytes, 0x02014669, "c705d946240280070000" ]
-        - [ bytes, 0x02014673, "c705d346240238040000" ]
+        - [ bytes32, 0x0201466f, 1920 ]
+        - [ bytes32, 0x02014679, 1080 ]
 
 - patch:
   title: "Elden Ring"
