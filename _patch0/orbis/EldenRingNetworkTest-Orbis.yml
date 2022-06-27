@@ -34,11 +34,11 @@
   arch: orbis
   patch_list:
         # Base
-        - [ bytes, 0x04258b8c, 1280 ]
-        - [ bytes, 0x04258b90, 720  ]
+        - [ bytes32, 0x04258b8c, 1280 ]
+        - [ bytes32, 0x04258b90, 720  ]
         # Neo 1920x1080 CB
-        - [ bytes, 0x01fe105f, 1920 ]
-        - [ bytes, 0x01fe1069, 1080 ]
+        - [ bytes32, 0x01fe105f, 1920 ]
+        - [ bytes32, 0x01fe1069, 1080 ]
 
 - patch:
   title: "Elden Ring: Network Test"
