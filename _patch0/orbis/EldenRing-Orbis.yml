@@ -1,5 +1,7 @@
 - patch:
-  title: "Elden Ring"
+  edrtitle: &edrtitle "Elden Ring"
+  site_game_title: *edrtitle
+  title: *edrtitle
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
@@ -12,7 +14,7 @@
         - [ bytes, 0x02021e41, "eb06" ]
 
 - patch:
-  title: "Elden Ring"
+  title: *edrtitle
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
@@ -27,7 +29,7 @@
         - [ bytes, 0x031650df, "90" ]
 
 - patch:
-  title: "Elden Ring"
+  title: *edrtitle
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
@@ -38,7 +40,7 @@
         - [ bytes32, 0x04258d4c, 720  ]
 
 - patch:
-  title: "Elden Ring"
+  title: *edrtitle
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
@@ -49,7 +51,7 @@
         - [ bytes32, 0x04258d4c, 900  ]
 
 - patch:
-  title: "Elden Ring"
+  title: *edrtitle
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
@@ -60,7 +62,7 @@
         - [ bytes32, 0x02014679, 1080 ]
 
 - patch:
-  title: "Elden Ring"
+  title: *edrtitle
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Enable MenuMan.EnableTopMenuDebug"
@@ -71,7 +73,7 @@
         - [ bytes, 0x0203064b, "b801000000" ]
 
 - patch:
-  title: "Elden Ring"
+  title: *edrtitle
   app_ver: "01.00"
   patch_ver: "1.0"
   name: "Skip Intro Logos"
