@@ -36,8 +36,11 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ bytes32, 0x04258d48, 1280 ]
-        - [ bytes32, 0x04258d4c, 720  ]
+        # .data is not the same as .text, +0x1c8000 to get no-aslr addr
+        # - [ bytes32, 0x04258d4c, 1280 ]
+        # - [ bytes32, 0x04258d50, 720  ]
+        - [ bytes32, 0x04090d4c, 1280 ]
+        - [ bytes32, 0x04090d50, 720  ]
 
 - patch:
   title: *edrtitle
@@ -47,8 +50,10 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ bytes32, 0x04258d48, 1600 ]
-        - [ bytes32, 0x04258d4c, 900  ]
+        # - [ bytes32, 0x04258d4c, 1600 ]
+        # - [ bytes32, 0x04258d50, 900  ]
+        - [ bytes32, 0x04090d4c, 1600 ]
+        - [ bytes32, 0x04090d50, 900  ]
 
 - patch:
   title: *edrtitle
