@@ -86,3 +86,90 @@
   arch: orbis
   patch_list:
         - [ byte, 0x01c6cfaa, 0x1 ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.05"
+  patch_ver: "1.0"
+  name: "60 FPS (For Base Console)"
+  author: "illusion"
+  note: "Unlocks framerate on Base/Slim PS4"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x02106663, "48b90900000009000000" ]
+        - [ bytes, 0x0210666d, "b805000000" ]
+        - [ bytes, 0x02106672, "eb06" ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.05"
+  patch_ver: "1.0"
+  name: "30 FPS Fix (Proper Frame Pacing)"
+  author: "illusion"
+  note: "Fixes Framepacing issues and caps framerate to 30FPS."
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x02106663, "48b90900000009000000" ]
+        - [ bytes, 0x0210666d, "b805000000" ]
+        - [ bytes, 0x02106672, "eb06" ]
+        - [ bytes, 0x0319dcec, "4489f6" ]
+        - [ bytes, 0x0319dcef, "90" ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.05"
+  patch_ver: "1.0"
+  name: "Resolution Patch (720p for Base)"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        # .data is not the same as .text, +0x184000 to get no-aslr addr
+        # - [ bytes32, 0x04258e3c, 1280 ]
+        # - [ bytes32, 0x04258e40, 720  ]
+        - [ bytes32, 0x040d4e3c, 1280 ]
+        - [ bytes32, 0x040d4e40, 720  ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.05"
+  patch_ver: "1.0"
+  name: "Resolution Patch (900p for Base)"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        # - [ bytes32, 0x04258e3c, 1600 ]
+        # - [ bytes32, 0x04258e40, 900  ]
+        - [ bytes32, 0x040d4e3c, 1600 ]
+        - [ bytes32, 0x040d4e40, 900  ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.05"
+  patch_ver: "1.0"
+  name: "Resolution Patch (1080p for Pro)"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes32, 0x020486cf, 1920 ]
+        - [ bytes32, 0x020486d9, 1080 ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.05"
+  patch_ver: "1.0"
+  name: "Enable MenuMan.EnableTopMenuDebug"
+  author: "illusion"
+  note: "Enables Menu Debug, scroll to below system to access during gameplay. (it doesn't have an icon)"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x02063aab, "b801000000" ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.05"
+  patch_ver: "1.0"
+  name: "Skip Intro Logos"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ byte, 0x01ca0a7a, 0x1 ]
