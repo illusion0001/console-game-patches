@@ -4,7 +4,7 @@ For use with [py-patch program](https://github.com/illusion0001/py-patcher-bin/r
 
 Download all [patch](/_patch/patch.zip) files.
 
-Opening the file preview below may freeze your browser on mobile Chromium based browsers browsers.
+Opening the file preview below may freeze your browser on mobile Chromium based browsers.
 
 Preview the file on [GitHub](https://github.com/illusion0001/console-game-patches/blob/main/{{ page.patch_file }}).
 
