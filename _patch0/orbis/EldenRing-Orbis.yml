@@ -25,8 +25,10 @@
         - [ bytes, 0x02021e32, "48b90900000009000000" ]
         - [ bytes, 0x02021e3c, "b805000000" ]
         - [ bytes, 0x02021e41, "eb06" ]
-        - [ bytes, 0x031650dc, "4489f6" ]
-        - [ bytes, 0x031650df, "90" ]
+        - [ bytes, 0x031650c9, "4589b534040000" ]
+        - [ bytes, 0x031650d0, "418bbd30040000" ]
+        - [ bytes, 0x031650d7, "be01000000" ]
+        - [ bytes, 0x031650dc, "90909090" ]
 
 - patch:
   title: *edrtitle
@@ -112,8 +114,10 @@
         - [ bytes, 0x02106663, "48b90900000009000000" ]
         - [ bytes, 0x0210666d, "b805000000" ]
         - [ bytes, 0x02106672, "eb06" ]
-        - [ bytes, 0x0319dcec, "4489f6" ]
-        - [ bytes, 0x0319dcef, "90" ]
+        - [ bytes, 0x0319dcd9, "4589b534040000" ]
+        - [ bytes, 0x0319dce0, "418bbd30040000" ]
+        - [ bytes, 0x0319dce7, "be01000000" ]
+        - [ bytes, 0x0319dcec, "90909090" ]
 
 - patch:
   title: *edrtitle
