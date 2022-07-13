@@ -4,12 +4,6 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x745AA1, "00" ]
-        # Screenflip type
-        # 01 Double buffer
-        # 02 Adaptive sync
-        # 03 triple buffering?
-        # default: 01
-        # 0x745FDE
+        - [ byte, 0x00b41aa1, 0x0 ]

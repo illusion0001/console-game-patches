@@ -4,9 +4,9 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x10B8FB7, "00 00 00 00" ]
+        - [ bytes32, 0x014B4FB7, 0x00000000 ]
 
 - patch:
   title: "Fallout 4"
@@ -14,13 +14,13 @@
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
         # Base
         # 1920x1080 -> 1280x720
-        - [ bytes, 0x10B8A98, "00 05 00 00" ]
-        - [ bytes, 0x10B8B3C, "D0 02 00 00" ]
+        - [ bytes32, 0x014b4a98, 1280 ]
+        - [ bytes32, 0x014b4a9c, 720  ]
         # Neo // untested!
         # 2560x1440
-        # 0x9A0AFB
-        # 0x9A0B21
+        # 0xD9CAFB
+        # 0xD9CB21

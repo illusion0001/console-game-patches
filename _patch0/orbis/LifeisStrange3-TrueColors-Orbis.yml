@@ -4,9 +4,9 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x414B742, "EB 07" ]
+        - [ bytes, 0x04547742, "eb07" ]
 
 - patch:
   title: "Life is Strange: True Colors"
@@ -14,7 +14,7 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x3A0540C, "48 E8 C1 84 5D 02" ]
-        - [ bytes, 0x5FDD8D2, "00 41 C7 04 8E 00 00 86 42 C4 C1 7A 10 04 8E C3" ]
+        - [ bytes, 0x03e0140c, "48e8c1845d02" ]
+        - [ bytes, 0x063d98d2, "0041c7048e00008642c4c17a10048ec3" ]

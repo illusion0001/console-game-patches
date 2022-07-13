@@ -5,9 +5,9 @@
   name: "60 FPS Unlock"
   author: "illusion"
   note: "CPU Limited in some areas."
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x49226C, "31 F6" ]
+        - [ bytes, 0x0088e26c, "31f6" ]
 
 - patch:
   title: "Rise of the Tomb Raider"
@@ -15,11 +15,7 @@
   patch_ver: "1.0"
   name: "Resolution Patch"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        # Base
-        # This game creates a separate container for resolution
-        # Which means we can set this to whatever res we want.
-        # At least it's true for tr3/tr11 anyway.
-        - [ bytes, 0x4AC076, "00 05 00 00" ]
-        - [ bytes, 0x4AC082, "D0 02 00 00" ]
+        - [ bytes32, 0x008a8076, 1280 ]
+        - [ bytes32, 0x008a8082, 720  ]

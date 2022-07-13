@@ -4,7 +4,7 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  note: "CPU Limited. For use with 9th generation of game consoles."
+  note: "CPU Limited."
   arch: orbis
   patch_list:
         - [ bytes, 0x00e6bf3d, "bf01000000" ]
@@ -15,10 +15,10 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion, GraFfiX_221211"
-  note: "CPU Limited. For use with 9th generation of game consoles."
-  arch: generic_orbis
+  note: "CPU Limited."
+  arch: orbis
   patch_list:
-        - [ bytes, 0xD3BB5E, "01" ]
+        - [ byte, 0x01533b5e, 0x1 ]
 
 - patch:
   title: "Grand Theft Auto V"
@@ -26,7 +26,7 @@
   patch_ver: "1.0"
   name: "Skip Intro"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x2F3E794, "00" ]
-        - [ bytes, 0x286EFB8, "00" ]
+        - [ byte, 0x0333a794, 0x0 ]
+        - [ byte, 0x02c6afb8, 0x0 ]

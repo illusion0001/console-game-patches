@@ -4,11 +4,9 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x258C177, "75" ]
-        # Skips: bSmoothFrameRate
-        # This patch disables all of it, see preview image for significant improvemnt.
+        - [ byte, 0x02988177, 0x75 ]
 
 - patch:
   title: "Daymare 1998"
@@ -16,11 +14,11 @@
   patch_ver: "1.0"
   name: "30 FPS Fix"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x258C177, "75" ]
-        - [ bytes, 0xE85D82, "67 E8 0F FB 6E 01 90 90" ] 
-        - [ bytes, 0x2575897, "41 C7 04 8E 02 00 00 00 41 8B 1C 8E C5 EB 2A C3 C3" ]
+        - [ byte, 0x02988177, 0x75 ]
+        - [ bytes, 0x01281D82, "67e80ffb6e019090" ]
+        - [ bytes, 0x02971897, "41c7048e02000000418b1c8ec5eb2ac3c3" ]
 
 - patch:
   title: "Daymare 1998"
@@ -28,11 +26,8 @@
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x1E95945, "E8 30 FF 6D 00" ]
-        - [ bytes, 0x1E9607A, "48 E8 08 F8 6D 00" ]
-        - [ bytes, 0x2575870, "48 E9 95 44 22 FE 47 ED E3 70 C7 41 04 55 55 85 41 C5 FA 10 61 04 EB 0E 41 C7 04 8E 00 00 86 42 C4 C1 7A 10 04 8E C3" ]
-        # 80% seems stable enough, maybe it's not needed
-        # 00 00 86 42 # 67.0f
-        # 55 55 85 41 # 16.67f
+        - [ bytes, 0x02291945, "e830ff6d00" ]
+        - [ bytes, 0x0229207a, "48e808f86d00" ]
+        - [ bytes, 0x02971870, "48e9954422fe47ede370c7410455558541c5fa106104eb0e41c7048e00008642c4c17a10048ec3" ]

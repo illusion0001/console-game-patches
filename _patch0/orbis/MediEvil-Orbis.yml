@@ -4,22 +4,19 @@
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x21B3801, "E8 2C 00 00 00" ]
-        - [ bytes, 0x21B3832, "C7 04 8B 00 00 86 42 C5 FA 10 04 8B C3" ]
-        # 00 00 86 42 # 67.0f
-        # 83% should be enough for neo 60fps
+        - [ bytes, 0x025af801, "e82c000000" ]
+        - [ bytes, 0x025af832, "c7048b00008642c5fa10048bc3" ]
+
 - patch:
   title: "MediEvil"
   app_ver: "01.02"
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        # Call
-        - [ bytes, 0x275C719, "E8 C7 90 FE FF" ]
-        - [ bytes, 0x275C746, "1B" ]
-        # FPS Function
-        - [ bytes, 0x27457E0, "E9 96 F4 01 01 C5 F8 2E 0C 8B 4C 8D 14 8B 81 3C 8B 00 00 F0 41 74 0D 41 C7 82 04 D6 00 00 00 00 00 00 EB 0B 41 C7 82 04 D6 00 00 02 00 00 00 C3" ]
+        - [ bytes, 0x02b58719, "e8c790feff" ]
+        - [ bytes, 0x02b58746, "1b" ]
+        - [ bytes, 0x02b417e0, "e996f40101c5f82e0c8b4c8d148b813c8b0000f041740d41c78204d6000000000000eb0b41c78204d6000002000000c3" ]

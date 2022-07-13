@@ -4,21 +4,17 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x125AFB, "84" ]
+        - [ byte, 0x00521afb, 0x84 ]
 
 - patch:
   title: "Horizon Zero Dawn"
   app_ver: "01.52"
   patch_ver: "1.0"
-  name: "60 FPS Unlock"
+  name: "Resolution Patch (720p for Base)"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        # base
-        # 1920x1080 -> 1280x720
-        - [ bytes, 0x1C74E20, "00 05 00 00 D0 02 00 00" ]
-        # neo
-        # 3840x2160 -> 1920x1080 // untested
-        - [ bytes, 0x1C74E48, "80 07 00 00 38 04 00 00" ]
+        - [ bytes32, 0x02070e20, 1280 ]
+        - [ bytes32, 0x02070e24, 720  ]

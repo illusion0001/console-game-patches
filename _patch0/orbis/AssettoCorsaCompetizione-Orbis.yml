@@ -5,8 +5,8 @@
   name: "Resolution Patch (720p)"
   author: "illusion"
   note: "CPU Limited in Races."
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x34BA740, "E9 CB E3 38 FE 41 C7 04 8E 00 00 86 42 C4 C1 7A 10 04 8E C3" ]
-        - [ bytes, 0x2E93FA8, "48 E9" ]
-        - [ bytes, 0x2E96E32, "48 E8 0D 39 62 00" ]
+        - [ bytes, 0x0038b6740, "e9cbe338fe41c7048e00008642c4c17a10048ec3" ]
+        - [ bytes, 0x00328ffa8, "48e9" ]
+        - [ bytes, 0x003292e32, "48e80d396200" ]

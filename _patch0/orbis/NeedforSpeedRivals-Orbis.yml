@@ -4,12 +4,12 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock (Proof of Concept)"
   author: "illusion"
-  note: "\nGame can now be run at any FPS without slow down or speedups, although logics are still borked."
-  arch: generic_orbis
+  note: "Game can now be run at any FPS without slow down or speedups, although logics are still borked."
+  arch: orbis
   patch_list:
-        - [ bytes, 0x494B83, "48 B2 01" ]
-        - [ bytes, 0x5F6906, "48 E8 94 0D 91 01" ]
-        - [ bytes, 0x1F076A0, "41 C7 46 28 00 00 70 42 C4 81 7A 10 46 28 C3" ]
+        - [ bytes, 0x00890b83, "48b201" ]
+        - [ bytes, 0x009f2906, "48e8940d9101" ]
+        - [ bytes, 0x023036a0, "41c7462800007042c4817a104628c3" ]
 
 - patch:
   title: "Need for Speed: Rivals"
@@ -17,7 +17,6 @@
   patch_ver: "1.0"
   name: "Resolution Patch"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        # Render.ResolutionScale
-        - [ lef32, 0x5CF1CD, 0.67 ]
+        - [ bytes32, 0x009cb1cd, 0x3f2b851f ]

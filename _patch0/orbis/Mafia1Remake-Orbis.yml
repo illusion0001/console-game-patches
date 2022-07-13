@@ -4,7 +4,7 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  note: "CPU/GPU Limited. For use with 9th generation of game consoles."
-  arch: generic_orbis
+  note: "CPU/GPU Limited."
+  arch: orbis
   patch_list:
-        - [ bytes, 0x2D2E2A1, "EB 05 90" ]
+        - [ bytes, 0x0312a2a1, "eb0590" ]

@@ -4,27 +4,26 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x2F98C96, "74 69" ]
+        - [ bytes, 0x03394C96, "7469" ]
 
 - patch:
   title: "Concrete Genie"
   app_ver: "01.06"
   patch_ver: "1.0"
-  name: "Resolution Patch"
+  name: "Resolution Patch (720p)"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x2D41546, "c7 40 00 0a 57 85 42" ]
-        # 0a 57 85 42 = 66.67f
-        # 7F AA A6 42 = 83.33f
+        - [ bytes, 0x0313d546, "c740000a578542" ]
+
 - patch:
   title: "Concrete Genie"
   app_ver: "01.06"
   patch_ver: "1.0"
   name: "Disable Motion Blur"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x1BB4219, "EB 58" ]
+        - [ bytes, 0x01fb0219, "eb58" ]

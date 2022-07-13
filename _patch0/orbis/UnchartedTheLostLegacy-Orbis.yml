@@ -4,6 +4,6 @@
   patch_ver: "1.0"
   name: "Intro Skip"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x13278B7, "EB 4C" ]
+        - [ bytes, 0x017238B7, "eb4c" ]

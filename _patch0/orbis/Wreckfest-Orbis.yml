@@ -4,7 +4,7 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  note: "\n60FPS 99% of the time. No need for resolution patch.\nUses adapative sync."
-  arch: generic_orbis
+  note: "60FPS 99% of the time. No need for resolution patch.\nUses adapative sync."
+  arch: orbis
   patch_list:
-        - [ bytes, 0x14460B, "95" ]
+        - [ bytes, 0x0054060b, "95" ]

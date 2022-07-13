@@ -5,10 +5,9 @@
   name: "60 FPS Unlock"
   author: "illusion"
   note: "Enable \"Better Framerate Mode\" in the game options menu on Neo. Not very useful for Base Console due to hardware limits."
-  # Dev Notes: "60 FPS mode everywhere, yes even in IGCs (in game cinematics). which is an upgrade over Prospero ver."
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x707B1A, "EB 12" ]
+        - [ bytes, 0x00b03b1a, "eb12" ]
 
 - patch:
   title: "Ghost of Tsushima: Director's Cut"
@@ -17,10 +16,10 @@
   name: "900p for Pro"
   author: "illusion"
   note: "Enable \"Better Framerate Mode\" in the game options menu on Neo."
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x706BD1, "40 06 00 00" ]
-        - [ bytes, 0x706BD5, "84 03 00 00" ]
+        - [ bytes32, 0x00b02bd1, 1600 ]
+        - [ bytes32, 0x00b02bd5, 900  ]
 
 - patch:
   title: "Ghost of Tsushima: Director's Cut"
@@ -29,6 +28,6 @@
   name: "Disable Checkerboarding"
   author: "illusion"
   note: "Enable \"Better Framerate Mode\" in the game options menu on Neo."
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x706BEA, "00" ]
+        - [ byte, 0x00b02bea, 0x0 ]

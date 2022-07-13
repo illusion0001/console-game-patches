@@ -2,14 +2,8 @@
   title: "Resident Evil 3"
   app_ver: "01.05"
   patch_ver: "1.0"
-  name: "Resolution Patch"
+  name: "Resolution Patch (720p for Base, 1080p for Pro)"
   author: "illusion"
-  note: "720p for Base, 1080p for Pro."
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x30A09FC, "1F 85 2B 3F" ]
-# 67% of 1920x1080 or 2880x1620
-# 1920x1080 => 1280x720
-# 2880x1620 => 1920x1080
-# 00 00 80 3F = 1.00f (default)
-# 1F 85 2B 3F = 0.67f
+        - [ bytes32, 0x0349c9fc, 0x3f2b851f ]

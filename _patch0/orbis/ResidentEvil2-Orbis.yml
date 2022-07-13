@@ -5,27 +5,18 @@
   name: "Resolution Patch"
   author: "illusion"
   note: "720p for Base, 1080p for Pro."
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x3FCA2D7, "1F 85 2B 3F" ]
+        - [ bytes32, 0x043c62d7, 0x3f2b851f ]
 
-# 67% of 1920x1080 or 2880x1620
-# 1920x1080 => 1280x720
-# 2880x1620 => 1920x1080
-# 00 00 80 3F = 1.00f (default)
-# 1F 85 2B 3F = 0.67f
 - patch:
   title: "Resident Evil 2"
   app_ver: "01.05"
   patch_ver: "1.0"
   name: "30 FPS Limit (Proper Frame-Pacing)"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x3F72473, "48 E8 DB 07 00 00" ]
-        - [ bytes, 0x3F72C54, "41 8B 7F 10 BE 01 00 00 00 C3" ]
-## notes:
-# 0x0 16.67ms -- 60hz
-# 0x1 33.33ms -- 30hz
-# 0x2 50.00ms -- 20hz
-##
+        - [ bytes, 0x0436e473, "48e8db070000" ]
+        - [ bytes, 0x0436ec54, "418b7f10be01000000c3" ]
+

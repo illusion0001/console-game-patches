@@ -4,7 +4,7 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  note: "\nCPU/GPU Limited. For use with 9th generation of game consoles.\nAlso uses double buffer vsync.\nNot useful at the moment."
-  arch: generic_orbis
+  note: "CPU+GPU Limited.\nAlso uses double buffer vsync.\nNot useful at the moment."
+  arch: orbis
   patch_list:
-        - [ bytes, 0x13ADEDB, "31 F6 EB 0F" ]
+        - [ bytes, 0x017a9edb, "31f6eb0f" ]

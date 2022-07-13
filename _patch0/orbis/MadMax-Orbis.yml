@@ -4,9 +4,9 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0xF2F900, "BE 00 00 00 00 90 90 90" ]
+        - [ bytes, 0x0132b900, "be00000000909090" ]
 
 - patch:
   title: "Mad Max"
@@ -14,10 +14,10 @@
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        # 1920x1080 -> 1280x720
-        - [ bytes, 0xA92F48, "00 05 00 00 D0 02 00 00" ]
+        - [ bytes, 0x00e8ef48, 1280 ]
+        - [ bytes, 0x00e8ef4c, 720  ]
 
 - patch:
   title: "Mad Max"
@@ -25,6 +25,6 @@
   patch_ver: "1.0"
   name: "Disable Motion Blur"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0xAA7F5A, "00" ]
+        - [ byte, 0x00ea3f5a, 0x0 ]

@@ -5,14 +5,11 @@
   name: "60 FPS Unlock"
   author: "illusion"
   note: "CPU Limited. For use with 9th generation of game consoles."
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        # 60fps
-        - [ bytes, 0x616ABF, "00" ]
-        # prevent game from speedup above 30fps
-        - [ bytes, 0x617F22, "85" ]
-        # triple buffering
-        - [ bytes, 0x617CA8, "04" ]
+        - [ bytes, 0x00a12abf, "00" ]
+        - [ bytes, 0x00a13f22, "85" ]
+        - [ bytes, 0x00a13ca8, "04" ]
         # sync modes
         # 00 no output
         # 01 untested
@@ -26,6 +23,7 @@
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x276C034, "00 05 00 00 D0 02 00 00 00" ]
+        - [ bytes32, 0x02b68034, 1280 ]
+        - [ bytes32, 0x02b68038, 720  ]

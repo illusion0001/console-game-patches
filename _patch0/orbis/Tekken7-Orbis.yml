@@ -4,6 +4,6 @@
   patch_ver: "1.0"
   name: "Disable Post Processing"
   author: "illusion"
-  arch: generic_orbis
+  arch: orbis
   patch_list:
-        - [ bytes, 0x1B01EDC, "48 E9" ]
+        - [ bytes, 0x01efdedc, "48e9" ]
