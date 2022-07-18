@@ -1,6 +1,8 @@
 - patch:
   title: "Ratchet and Clank"
   app_ver: "01.09"
+  app_titleid: [ "CUSA01073", "CUSA01928" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"

@@ -1,6 +1,8 @@
 - patch:
   title: "Grand Theft Auto V"
   app_ver: "01.00"
+  app_titleid: [ "CUSA00419", "CUSA00411", "CUSA00880" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -12,6 +14,8 @@
 - patch:
   title: "Grand Theft Auto V"
   app_ver: "01.38"
+  app_titleid: [ "CUSA00419", "CUSA00411", "CUSA00880" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion, GraFfiX_221211"
@@ -23,6 +27,8 @@
 - patch:
   title: "Grand Theft Auto V"
   app_ver: "01.38"
+  app_titleid: [ "CUSA00419", "CUSA00411", "CUSA00880" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Intro"
   author: "illusion"

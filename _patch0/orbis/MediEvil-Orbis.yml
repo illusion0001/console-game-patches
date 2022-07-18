@@ -1,6 +1,8 @@
 - patch:
   title: "MediEvil"
   app_ver: "01.02"
+  app_titleid: [ "CUSA11227", "CUSA12982" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"
@@ -12,6 +14,8 @@
 - patch:
   title: "MediEvil"
   app_ver: "01.02"
+  app_titleid: [ "CUSA11227", "CUSA12982" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"

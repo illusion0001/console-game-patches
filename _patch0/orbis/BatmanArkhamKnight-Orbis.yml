@@ -1,6 +1,8 @@
 - patch:
   title: "Batman: Arkham Knight"
   app_ver: "01.14"
+  app_titleid: [ "CUSA00133" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -20,6 +22,8 @@
 - patch:
   title: "Batman: Arkham Knight"
   app_ver: "01.14"
+  app_titleid: [ "CUSA00133" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"

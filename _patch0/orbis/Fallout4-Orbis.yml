@@ -1,6 +1,8 @@
 - patch:
   title: "Fallout 4"
   app_ver: "01.34"
+  app_titleid: [ "CUSA02557", "CUSA02962", "CUSA03450" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -11,6 +13,8 @@
 - patch:
   title: "Fallout 4"
   app_ver: "01.34"
+  app_titleid: [ "CUSA02557", "CUSA02962", "CUSA03450" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
   author: "illusion"

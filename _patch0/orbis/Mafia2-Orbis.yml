@@ -1,6 +1,8 @@
 - patch:
   title: "Mafia 2: Definitive Edition"
   app_ver: "01.02"
+  app_titleid: [ "CUSA16990" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"

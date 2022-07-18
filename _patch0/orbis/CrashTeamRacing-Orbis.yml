@@ -1,6 +1,8 @@
 - patch:
   title: "Crash Team Racing Nitro-Fueled"
   app_ver: "01.20"
+  app_titleid: [ "CUSA14876", "CUSA13795" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"

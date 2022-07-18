@@ -12,6 +12,8 @@
 - patch:
   title: "Resident Evil: HD"
   app_ver: "01.01"
+  app_titleid: [ "CUSA03178" ]
+# app_elf: 
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"

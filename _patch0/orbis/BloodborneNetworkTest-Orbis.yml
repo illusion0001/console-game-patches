@@ -1,6 +1,8 @@
 - patch:
   title: "Bloodborne: Network Test"
   app_ver: "01.00"
+  app_titleid: [ "CUSA01322" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
   author: "illusion, manfightdragon"
@@ -15,6 +17,8 @@
 - patch:
   title: "Bloodborne: Network Test"
   app_ver: "01.00"
+  app_titleid: [ "CUSA01322" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS (with Deltatime)"
   author: "illusion"
@@ -43,6 +47,8 @@
 - patch:
   title: "Bloodborne: Network Test"
   app_ver: "01.00"
+  app_titleid: [ "CUSA01322" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"
@@ -58,6 +64,8 @@
 - patch:
   title: "Bloodborne: Network Test"
   app_ver: "01.00"
+  app_titleid: [ "CUSA01322" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Disable Chromatic Aberration"
   author: "illusion"
@@ -68,6 +76,8 @@
 - patch:
   title: "Bloodborne: Network Test"
   app_ver: "01.00"
+  app_titleid: [ "CUSA01322" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Disable Motion Blur"
   author: "illusion"

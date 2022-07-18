@@ -2,6 +2,7 @@
   title: "Assassin's Creed IV Black Flag"
   app_ver: "01.04"
   app_titleid: [ "CUSA00009" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS"
   author: "illusion"

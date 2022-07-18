@@ -1,6 +1,8 @@
 - patch:
   title: "The Order 1886"
   app_ver: "01.02"
+  app_titleid: [ "CUSA00035", "CUSA00670" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -22,6 +24,8 @@
 - patch:
   title: "The Order 1886"
   app_ver: "01.02"
+  app_titleid: [ "CUSA00035", "CUSA00670" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (900p)"
   author: "illusion"
@@ -34,6 +38,8 @@
 - patch:
   title: "The Order 1886"
   app_ver: "01.02"
+  app_titleid: [ "CUSA00035", "CUSA00670" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"
@@ -46,6 +52,8 @@
 - patch:
   title: "The Order 1886"
   app_ver: "01.02"
+  app_titleid: [ "CUSA00035", "CUSA00670" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "16:9 Aspect Ratio (Full Screen)"
   author: "illusion"

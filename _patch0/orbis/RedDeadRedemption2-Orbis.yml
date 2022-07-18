@@ -3,6 +3,8 @@
   site_game_title: *rdr3_title
   title: *rdr3_title
   app_ver: "01.29"
+  app_titleid: [ "CUSA03041", "CUSA08519", "CUSA08568" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Unlock FPS"
   author: "illusion"
@@ -13,6 +15,8 @@
 - patch:
   title: *rdr3_title
   app_ver: "01.29"
+  app_titleid: [ "CUSA03041", "CUSA08519", "CUSA08568" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Intro"
   author: "illusion"

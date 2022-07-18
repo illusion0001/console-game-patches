@@ -1,6 +1,8 @@
 - patch:
-  title: "Uncharted 4"
+  title: "Uncharted 4: A Thief's End"
   app_ver: "01.33"
+  app_titleid: [ "CUSA00341", "CUSA00917", "CUSA00918", "CUSA04529" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Intro Skip"
   author: "illusion"

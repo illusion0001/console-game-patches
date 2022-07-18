@@ -1,7 +1,9 @@
 - patch:
-  title: "Uncharted: Drake's Fortune Remastered (eboot.bin)"
+  title: "Uncharted: Drake's Fortune Remastered"
   site_game_title: &site_game_title "Uncharted: The Nathan Drake Collection"
   app_ver: "01.02"
+  app_titleid: [ "CUSA03280", "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Intro Skip"
   author: "illusion"
@@ -10,8 +12,10 @@
         - [ byte, 0x00d5ca17, 0x1 ]
 
 - patch:
-  title: "Uncharted: Drake's Fortune Remastered (eboot.bin)"
+  title: "Uncharted: Drake's Fortune Remastered"
   app_ver: "01.02"
+  app_titleid: [ "CUSA03280", "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"
@@ -20,8 +24,10 @@
         - [ byte, 0x004fe1ab, 0x1 ]
 
 - patch:
-  title: "Uncharted 2: Among Thieves Remastered (eboot.bin/big2-ps4_Shipping.elf)"
+  title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.00"
+  app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin", "big2-ps4_Shipping.elf" ]
   patch_ver: "1.0"
   name: "Bug Fix: Quit to Menu Crash"
   author: "ZEROx, illusion"
@@ -42,8 +48,10 @@
         - [ bytes, 0x00acab1f, "c3" ]             # RET
 
 - patch:
-  title: "Uncharted 2: Among Thieves Remastered (eboot.bin/big2-ps4_Shipping.elf)"
+  title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.02"
+  app_titleid: [ "CUSA03281", "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin", "big2-ps4_Shipping.elf" ]
   patch_ver: "1.0"
   name: "Intro Skip"
   author: "illusion"
@@ -52,8 +60,10 @@
         - [ byte, 0x0145de94, 0x1 ]
 
 - patch:
-  title: "Uncharted 2: Among Thieves Remastered (eboot.bin/big2-ps4_Shipping.elf)"
+  title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.02"
+  app_titleid: [ "CUSA03281", "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin", "big2-ps4_Shipping.elf" ]
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"
@@ -62,8 +72,10 @@
         - [ byte, 0x008d3c0b, 0x1 ]
 
 - patch:
-  title: "Uncharted 3: Drake's Deception Remastered (eboot.bin/big3-ps4_Shipping.elf)"
+  title: "Uncharted 3: Drake's Deception Remastered"
   app_ver: "01.02"
+  app_titleid: [ "CUSA03282", "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin", "big3-ps4_Shipping.elf" ]
   patch_ver: "1.0"
   name: "Intro Skip"
   author: "illusion"
@@ -72,8 +84,10 @@
         - [ bytes, 0x009651d0, "c685043a000000" ] # MOV byte ptr [RBP + 0x3a04],0x0
 
 - patch:
-  title: "Uncharted 3: Drake's Deception Remastered (eboot.bin/big3-ps4_Shipping.elf)"
+  title: "Uncharted 3: Drake's Deception Remastered"
   app_ver: "01.02"
+  app_titleid: [ "CUSA03282", "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin", "big3-ps4_Shipping.elf" ]
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"

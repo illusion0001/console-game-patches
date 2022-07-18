@@ -1,6 +1,8 @@
 - patch:
   title: "Need for Speed: Rivals"
   app_ver: "01.04"
+  app_titleid: [ "CUSA00113" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock (Proof of Concept)"
   author: "illusion"
@@ -14,6 +16,8 @@
 - patch:
   title: "Need for Speed: Rivals"
   app_ver: "01.04"
+  app_titleid: [ "CUSA00113" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch"
   author: "illusion"

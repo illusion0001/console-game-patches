@@ -1,6 +1,8 @@
 - patch:
   title: "Alien: Isolation"
   app_ver: "01.04"
+  app_titleid: [ "CUSA00363" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Save Confirm Screen"
   author: "ThirteenAG, illusion"
@@ -12,6 +14,8 @@
 - patch:
   title: "Alien: Isolation"
   app_ver: "01.04"
+  app_titleid: [ "CUSA00363" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Custom FOV (100.0)"
   author: "illusion"

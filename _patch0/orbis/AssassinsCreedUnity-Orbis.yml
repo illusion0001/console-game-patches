@@ -1,6 +1,8 @@
 - patch:
   title: "Assassin's Creed: Unity"
   app_ver: "01.05"
+  app_titleid: [ "CUSA00663" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Intro"
   author: "illusion"
@@ -11,6 +13,8 @@
 - patch:
   title: "Assassin's Creed: Unity"
   app_ver: "01.05"
+  app_titleid: [ "CUSA00663" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -21,6 +25,8 @@
 - patch:
   title: "Assassin's Creed: Unity"
   app_ver: "01.05"
+  app_titleid: [ "CUSA00663" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (1080p)"
   author: "illusion"
@@ -32,6 +38,8 @@
 - patch:
   title: "Assassin's Creed: Unity"
   app_ver: "01.05"
+  app_titleid: [ "CUSA00663" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (900p)"
   author: "illusion"
@@ -43,6 +51,8 @@
 - patch:
   title: "Assassin's Creed: Unity"
   app_ver: "01.05"
+  app_titleid: [ "CUSA00663" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"

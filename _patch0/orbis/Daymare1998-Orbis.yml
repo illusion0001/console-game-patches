@@ -1,6 +1,8 @@
 - patch:
   title: "Daymare 1998"
   app_ver: "01.00"
+  app_titleid: [ "CUSA17157" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -11,6 +13,8 @@
 - patch:
   title: "Daymare 1998"
   app_ver: "01.00"
+  app_titleid: [ "CUSA17157" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "30 FPS Fix"
   author: "illusion"
@@ -23,6 +27,8 @@
 - patch:
   title: "Daymare 1998"
   app_ver: "01.00"
+  app_titleid: [ "CUSA17157" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"

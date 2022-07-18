@@ -1,6 +1,8 @@
 - patch:
   title: "Ghost of Tsushima: Director's Cut"
   app_ver: "02.13"
+  app_titleid: [ "CUSA11456", "CUSA13323" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -12,6 +14,8 @@
 - patch:
   title: "Ghost of Tsushima: Director's Cut"
   app_ver: "02.13"
+  app_titleid: [ "CUSA11456", "CUSA13323" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "900p for Pro"
   author: "illusion"
@@ -24,6 +28,8 @@
 - patch:
   title: "Ghost of Tsushima: Director's Cut"
   app_ver: "02.13"
+  app_titleid: [ "CUSA11456", "CUSA13323" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Disable Checkerboarding"
   author: "illusion"

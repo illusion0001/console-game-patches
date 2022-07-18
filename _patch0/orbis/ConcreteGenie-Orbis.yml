@@ -1,6 +1,8 @@
 - patch:
   title: "Concrete Genie"
   app_ver: "01.06"
+  app_titleid: [ "CUSA11834", "CUSA11875", "CUSA11851" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -11,6 +13,8 @@
 - patch:
   title: "Concrete Genie"
   app_ver: "01.06"
+  app_titleid: [ "CUSA11834", "CUSA11875", "CUSA11851" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"
@@ -21,6 +25,8 @@
 - patch:
   title: "Concrete Genie"
   app_ver: "01.06"
+  app_titleid: [ "CUSA11834", "CUSA11875", "CUSA11851" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Disable Motion Blur"
   author: "illusion"

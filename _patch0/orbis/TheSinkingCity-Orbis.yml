@@ -1,6 +1,8 @@
 - patch:
   title: "The Sinking City"
   app_ver: "01.04"
+  app_titleid: [ "CUSA13152" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch"
   author: "illusion"

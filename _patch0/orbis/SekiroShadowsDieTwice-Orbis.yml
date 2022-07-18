@@ -1,6 +1,8 @@
 - patch:
   title: "Sekiro: Shadows Die Twice"
   app_ver: "01.06"
+  app_titleid: [ "CUSA12047" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
   author: "illusion"
@@ -17,6 +19,8 @@
 - patch:
   title: "Sekiro: Shadows Die Twice"
   app_ver: "01.06"
+  app_titleid: [ "CUSA12047" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -31,6 +35,8 @@
 - patch:
   title: "Sekiro: Shadows Die Twice"
   app_ver: "01.06"
+  app_titleid: [ "CUSA12047" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: Resolution Patch (720p Base, 1080p Pro)
   author: "illusion"

@@ -2,6 +2,7 @@
   title: "FATAL FRAME: Maiden of Black Water"
   app_ver: "01.04"
   app_titleid: [ "CUSA28987" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS"
   author: "illusion"
@@ -13,6 +14,7 @@
   title: "FATAL FRAME: Maiden of Black Water"
   app_ver: "01.04"
   app_titleid: [ "CUSA28987" ]
+  app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Always boot in English"
   author: "illusion"
