@@ -356,5 +356,6 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ bytes, 0x0124d664, "c6402101" ]     # MOV byte ptr [RAX + 0x21],0x1
-        - [ bytes, 0x0124d668, "48e922ffffff" ] # JMP 0x0124d590 # Skip check that costumes are locked
+        - [ bytes, 0x0124d1a2, "48e9b1000000" ]
+        - [ bytes, 0x0124d664, "c6402101" ]
+        - [ bytes, 0x0124d668, "48e922ffffff" ]
