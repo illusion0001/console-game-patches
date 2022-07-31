@@ -359,3 +359,15 @@
         - [ bytes, 0x0124d1a2, "48e9b1000000" ]
         - [ bytes, 0x0124d664, "c6402101" ]
         - [ bytes, 0x0124d668, "48e922ffffff" ]
+
+- patch:
+  title: "Gravity Rush 2 (Gravity Daze 2)"
+  app_ver: "01.11"
+  app_titleid: [ "CUSA03694", "CUSA04943", "CUSA00547" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Unlock All Gestures"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x017157c8, "48b001" ]
