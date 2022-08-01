@@ -213,7 +213,7 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
-  author: "illusion, 想不出名字"
+  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
   note: "Unlocks framerate on Base/Slim PS4"
   arch: orbis
   patch_list:
@@ -228,7 +228,7 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
-  author: "illusion, 想不出名字"
+  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
   arch: orbis
   patch_list:
         - [ bytes32, 0x40b4e7c, 1280 ]
@@ -241,7 +241,7 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
-  author: "illusion, 想不出名字"
+  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
   arch: orbis
   patch_list:
         - [ bytes32, 0x40b4e7c, 1600 ]
@@ -254,7 +254,7 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
-  author: "illusion, 想不出名字"
+  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
   arch: orbis
   patch_list:
         - [ bytes32, 0x202172f, 1920 ]
@@ -267,7 +267,7 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Intro Logos"
-  author: "illusion, 想不出名字"
+  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
   arch: orbis
   patch_list:
         - [ byte, 0x1c7a9ea, 0x1 ]
