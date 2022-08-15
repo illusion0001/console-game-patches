@@ -4,6 +4,20 @@
   app_titleid: [ "CUSA00900", "CUSA00207", "CUSA03173", "CUSA00208", "CUSA01363" ]
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
+  name: "Skip Intro"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes32, 0x04d99138, 0x00000000 ]
+        - [ bytes32, 0x04d99154, 0x00000000 ]
+        - [ bytes32, 0x04d9916e, 0x00000000 ]
+
+- patch:
+  title: "Bloodborne"
+  app_ver: "01.09"
+  app_titleid: [ "CUSA00900", "CUSA00207", "CUSA03173", "CUSA00208", "CUSA01363" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
   author: "illusion, Lance McDonald (manfightdragon)"
   note: "Caps framerate to 30 with proper frame pacing."
