@@ -12,7 +12,50 @@ jobs:
       github.event_name == 'push' &&
       github.repository == 'illusion0001/console-game-patches'
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+          cache-dependency-path: 'requirements.txt'
+
+      - name: Setup dependencies
+        run: pip install -r requirements.txt
+
+      - name: Pack zip
+        run: |
+          mkdir -p output/yml
+          python file-autogen.py
+          current=$(date '+%Y-%m-%d %H:%M:%S %A (%Z %z)')
+          msg="Patch database version: $current"
+          echo $msg > output/build.txt
+          mv output patches
+          zip -r patch1.zip patches/*
+          mkdir out
+          cp patch1.zip CNAME out/
+
+      - name: Deploy
+        run: |
+          cd out
+          git init
+          git add -A
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m 'Deploy patch asset'
+
+      - name: Force push to destination branch
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          force: true
+          directory: out
+
+      - name: Checkout website
+        uses: actions/checkout@v3
         with:
           repository: illusion0001/illusion0001.github.io
 
