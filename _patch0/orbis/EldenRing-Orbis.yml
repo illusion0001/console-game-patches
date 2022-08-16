@@ -213,7 +213,7 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
-  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
   note: "Unlocks framerate on Base/Slim PS4"
   arch: orbis
   patch_list:
@@ -228,7 +228,7 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
-  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
   arch: orbis
   patch_list:
         - [ bytes32, 0x40b4e7c, 1280 ]
@@ -241,7 +241,7 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
-  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
   arch: orbis
   patch_list:
         - [ bytes32, 0x40b4e7c, 1600 ]
@@ -254,7 +254,7 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
-  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
   arch: orbis
   patch_list:
         - [ bytes32, 0x202172f, 1920 ]
@@ -267,7 +267,73 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Intro Logos"
-  author: "illusion" # ported by (redacted for parser), commented for now, the parser didn't like chinese characters
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
   arch: orbis
   patch_list:
         - [ byte, 0x1c7a9ea, 0x1 ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.09"
+  app_titleid: [ "CUSA28863" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "60 FPS (For Base Console)"
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
+  note: "Unlocks framerate on Base/Slim PS4"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x20e7f43, "48b90900000009000000" ]
+        - [ bytes, 0x20e7f4d, "b805000000" ]
+        - [ bytes, 0x20e7f52, "eb06" ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.09"
+  app_titleid: [ "CUSA28863" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Resolution Patch (720p for Base)"
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
+  arch: orbis #+0x19C000 to get no-aslr addr (0x4258E7C)
+  patch_list:
+        - [ bytes32, 0x40bce7c, 1280 ]
+        - [ bytes32, 0x40bce80, 720  ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.09"
+  app_titleid: [ "CUSA28863" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Resolution Patch (900p for Base)"
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
+  arch: orbis #+0x19C000 to get no-aslr addr (0x4258E7C)
+  patch_list:
+        - [ bytes32, 0x40bce7c, 1600 ]
+        - [ bytes32, 0x40bce80, 900  ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.09"
+  app_titleid: [ "CUSA28863" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Resolution Patch (1080p for Pro)"
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
+  arch: orbis 
+  patch_list:
+        - [ bytes32, 0x202885f, 1920 ]
+        - [ bytes32, 0x2028869, 1080 ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.09"
+  app_titleid: [ "CUSA28863" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Skip Intro Logos"
+  author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
+  arch: orbis
+  patch_list:
+        - [ byte, 0x1C8032A, 0x1 ]
