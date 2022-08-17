@@ -20,8 +20,8 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ bytes, 0x00e8ef48, 1280 ]
-        - [ bytes, 0x00e8ef4c, 720  ]
+        - [ bytes32, 0x00e8ef48, 1280 ]
+        - [ bytes32, 0x00e8ef4c, 720  ]
 
 - patch:
   title: "Mad Max"
