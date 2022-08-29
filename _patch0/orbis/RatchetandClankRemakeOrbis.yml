@@ -6,7 +6,7 @@
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  note: "CPU+GPU Limited."
   arch: orbis
   patch_list:
-        - [ bytes16, 0x0071b834, 0x9090 ]
+        - [ bytes, 0x01b23444, "4d69fc48010000" ]
+        - [ bytes, 0x01b2344b, "6641c7461e803f" ]
