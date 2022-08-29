@@ -34,10 +34,12 @@ jobs:
           current=$(date '+%Y-%m-%d %H:%M:%S %A (%Z %z)')
           msg="Patch database version: $current"
           echo $msg > output/build.txt
+          echo $msg > build.txt
+          echo "msg: $msg"
           mv output patches
           zip -r patch1.zip patches/*
           mkdir out
-          cp patch1.zip CNAME out/
+          cp patch1.zip CNAME build.txt out/
 
       - name: Deploy
         run: |
