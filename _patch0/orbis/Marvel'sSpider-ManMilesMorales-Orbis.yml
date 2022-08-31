@@ -22,6 +22,6 @@
   arch: orbis
   patch_list:
         - [ bytes, 0x01cb671d, "48e8abd83602" ]
-        - [ bytes, 0x04023fce, "c6401c01" ]
-        - [ bytes, 0x04023fd2, "c7801015000001000100" ]
+        - [ bytes, 0x04023fce, "c6401c01" ]             # EngineDebug.DebugMenuEnable (does DebugMenuInit exist in i31_final??)
+        - [ bytes, 0x04023fd2, "c7801015000001000100" ] # GUI.UseDebugMenuInput + GUI.EasyDebug
         - [ bytes, 0x04023fdc, "c3" ]
