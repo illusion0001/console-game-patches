@@ -1,9 +1,10 @@
 - patch:
   edrtitle: &edrtitle "Elden Ring"
+  edrtitleid: &edrtitleid [ "CUSA28863", "CUSA18723", "CUSA28527" ]
   site_game_title: *edrtitle
   title: *edrtitle
   app_ver: "01.00"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
@@ -18,7 +19,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.00"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
@@ -37,7 +38,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.00"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
@@ -53,7 +54,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.00"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
@@ -68,7 +69,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.00"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
@@ -81,7 +82,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.00"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Enable MenuMan.EnableTopMenuDebug"
@@ -94,7 +95,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.00"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Intro Logos"
@@ -106,7 +107,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.05"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
@@ -121,7 +122,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.05"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
@@ -140,7 +141,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.05"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
@@ -156,7 +157,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.05"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
@@ -171,7 +172,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.05"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
@@ -184,7 +185,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.05"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Enable MenuMan.EnableTopMenuDebug"
@@ -197,7 +198,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.05"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Intro Logos"
@@ -209,7 +210,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.08"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
@@ -224,7 +225,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.08"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
@@ -237,7 +238,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.08"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
@@ -250,7 +251,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.08"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
@@ -263,7 +264,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.08"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Intro Logos"
@@ -275,7 +276,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.09"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
@@ -290,7 +291,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.09"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
@@ -303,7 +304,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.09"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
@@ -316,7 +317,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.09"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
@@ -329,7 +330,7 @@
 - patch:
   title: *edrtitle
   app_ver: "01.09"
-  app_titleid: [ "CUSA28863" ]
+  app_titleid: *edrtitleid
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Skip Intro Logos"
