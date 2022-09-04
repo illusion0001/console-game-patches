@@ -18,7 +18,8 @@
   app_elf: [ "eboot.bin" ]
   patch_ver: "1.0"
   name: "Debug Menu"
-# author: "" # not sure who the original author is, ported from demo version
+  author: "Lance McDonald (manfightdragon)"
+  # not sure who the original author is, ported from demo version
   arch: orbis
   patch_list:
   # 01bda450 routine to open menu is stubbed?
