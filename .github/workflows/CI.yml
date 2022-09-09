@@ -33,13 +33,16 @@ jobs:
           python file-autogen.py
           current=$(date '+%Y-%m-%d %H:%M:%S %A (%Z %z)')
           msg="Patch database version: $current"
+          msg_md="Patch archive built on: \`$current\`"
           echo $msg > output/build.txt
           echo $msg > build.txt
+          echo $msg_md > patch_built.md
           echo "msg: $msg"
+          echo "msg_md: $msg_md"
           mv output patches
           zip -r patch1.zip patches/*
           mkdir out
-          cp patch1.zip CNAME build.txt out/
+          cp patch1.zip CNAME build.txt patch_built.md out/
 
       - name: Deploy
         run: |
