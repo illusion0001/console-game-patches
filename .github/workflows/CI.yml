@@ -3,7 +3,7 @@ name: Push workflow dispatch
 on:
   push:
     paths-ignore:
-      - "*.md"
+      - "**/*.md"
     branches: main
 
 jobs:
