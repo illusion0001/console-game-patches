@@ -2,8 +2,9 @@ name: Push workflow dispatch
 
 on:
   push:
-    paths-ignore:
-      - "**/*.md"
+    paths:
+      - '**/*.yml'
+      - '**/*.py'
     branches: main
 
 jobs:
@@ -13,16 +14,10 @@ jobs:
     if: |
       github.event_name == 'push' &&
       github.repository == 'illusion0001/console-game-patches'
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - name: Setup Python
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.x'
-          cache: 'pip'
-          cache-dependency-path: 'requirements.txt'
 
       - name: Setup dependencies
         run: pip install -r requirements.txt
@@ -37,12 +32,10 @@ jobs:
           echo $msg > output/build.txt
           echo $msg > build.txt
           echo $msg_md > patch_built.md
-          echo "msg: $msg"
-          echo "msg_md: $msg_md"
           mv output patches
           zip -r patch1.zip patches/*
           mkdir out
-          cp patch1.zip CNAME build.txt patch_built.md out/
+          cp patch1.zip CNAME build.txt patch_built.md .github/README.md out/
 
       - name: Deploy
         run: |
