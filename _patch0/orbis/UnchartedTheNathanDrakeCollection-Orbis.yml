@@ -21,31 +21,71 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ byte, 0x004fe1ab, 0x1 ]
+        - [ bytes, 0x009cf259, "41c686ba39000000" ]
+
+- patch:
+  6xnop: &6xnop "909090909090"
+  eax1: &eax1 "b801000000"
+  title: "Uncharted: Drake's Fortune Remastered"
+  app_ver: "01.02"
+  app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Restore DevKit Menus"
+  author: "illusion, TheMagicalBlob"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x006d069e, *6xnop ] # build text
+        # Dev Menu Restore
+        - [ bytes, 0x004de1cb, *eax1 ]
+        - [ bytes, 0x004de20c, *eax1 ]
+        - [ bytes, 0x004de28b, "e9f80c0000" ] # no ps3 rendering
+        - [ bytes, 0x004def88, *eax1 ]
+        - [ bytes, 0x004df6a1, *eax1 ]
+        - [ bytes, 0x0066e474, *eax1 ]
+        - [ bytes, 0x0066e6c8, *eax1 ]
+        - [ bytes, 0x004df822, *eax1 ]
+        - [ bytes, 0x004df883, *eax1 ]
+        - [ bytes, 0x004df8e4, *eax1 ]
+        - [ bytes, 0x004fe8e4, *eax1 ]
+        - [ bytes, 0x004df945, *eax1 ]
+        - [ bytes, 0x004dfa46, *eax1 ]
+        - [ bytes, 0x004dfb40, *eax1 ]
+        - [ bytes, 0x004dfb86, *eax1 ]
+        - [ bytes, 0x004dfb98, *eax1 ]
+        - [ bytes, 0x004dfbaa, *eax1 ]
+        - [ bytes, 0x004dfc0b, *eax1 ]
+        - [ bytes, 0x004dfc6c, *eax1 ]
+        - [ bytes, 0x004dfca5, *eax1 ]
+        - [ bytes, 0x004dff00, *eax1 ]
+        - [ bytes, 0x004dff63, *eax1 ]
+        - [ bytes, 0x004e011a, *eax1 ]
+        # Quick Menu
+        - [ bytes, 0x006a43ef, *eax1 ]
 
 - patch:
   title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.00"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "eboot.bin", "big2-ps4_Shipping.elf" ]
+  app_elf: [ "big2-ps4_Shipping.elf" ]
   patch_ver: "1.0"
   name: "Bug Fix: Quit to Menu Crash"
   author: "ZEROx, illusion"
   arch: orbis
   patch_list:
-        - [ bytes, 0x004ade75, "e887cc6100" ]     # CALL 0x00acab01
-        - [ bytes, 0x004ade7a, "90" ]             # NOP
-        - [ bytes, 0x004ade7b, "90" ]             # NOP
-        - [ bytes, 0x004ade7c, "90" ]             # NOP
-        - [ bytes, 0x004ade7d, "90" ]             # NOP
-        - [ bytes, 0x00acab00, "c3" ]             # RET
-        - [ bytes, 0x00acab01, "4983ff00" ]       # CMP R15,0x0
-        - [ bytes, 0x00acab05, "0f8509000000" ]   # JNZ 0x00acab14
-        - [ bytes, 0x00acab0b, "48c7c701000000" ] # MOV RDI,0x1
-        - [ bytes, 0x00acab12, "eb07" ]           # JMP 0x00acab1b
-        - [ bytes, 0x00acab14, "498dbf20060000" ] # LEA RDI,[R15 + 0x620]
-        - [ bytes, 0x00acab1b, "4883ff00" ]       # CMP RDI,0x0
-        - [ bytes, 0x00acab1f, "c3" ]             # RET
+        - [ bytes, 0x004ade75, "e887cc6100" ]
+        - [ bytes, 0x004ade7a, "90" ]
+        - [ bytes, 0x004ade7b, "90" ]
+        - [ bytes, 0x004ade7c, "90" ]
+        - [ bytes, 0x004ade7d, "90" ]
+        - [ bytes, 0x00acab00, "c3" ]
+        - [ bytes, 0x00acab01, "4983ff00" ]
+        - [ bytes, 0x00acab05, "0f8509000000" ]
+        - [ bytes, 0x00acab0b, "48c7c701000000" ]
+        - [ bytes, 0x00acab12, "eb07" ]
+        - [ bytes, 0x00acab14, "498dbf20060000" ]
+        - [ bytes, 0x00acab1b, "4883ff00" ]
+        - [ bytes, 0x00acab1f, "c3" ]
 
 - patch:
   title: "Uncharted 2: Among Thieves Remastered"
@@ -81,7 +121,7 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ bytes, 0x009651d0, "c685043a000000" ] # MOV byte ptr [RBP + 0x3a04],0x0
+        - [ bytes, 0x009651d0, "c685043a000000" ]
 
 - patch:
   title: "Uncharted 3: Drake's Deception Remastered"
