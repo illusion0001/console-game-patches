@@ -49,6 +49,7 @@
   patch_list:
         - [ byte, 0x00401c79, 0x01 ] # enable
         - [ bytes16, 0x00a92c41, 0x2e85 ] # save data to dbg render
+        - [ bytes, 0x00404649, "4831c0" ] # hide "D: %d"
         # rendering dev
         # - [ bytes, , "" ] # call
         # - [ bytes, , "" ] # crash fix
@@ -120,6 +121,18 @@
         - [ utf8, 0x018a8f78, "rifle-improvised-fullauto      " ]
         - [ utf8, 0x018a8f98, "baseball-bat                   " ]
         - [ utf8, 0x018a8fb8, "hatchet                        " ]
+
+- patch:
+  title: "The Last of Us: Remastered"
+  app_ver: "01.00"
+  app_titleid: [ "CUSA00552", "CUSA00556", "CUSA00557", "CUSA00559" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Light Theme for Dev Menu"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x0040d326, "b900000000" ]
 
 - patch:
   title: "The Last of Us: Remastered"
