@@ -1,4 +1,8 @@
 - patch:
+  5xnop: &5xnop "9090909090"
+  6xnop: &6xnop "909090909090"
+  eax1: &eax1 "b801000000"
+  al1ret: &al1ret "b001c3"
   title: "Uncharted: Drake's Fortune Remastered"
   site_game_title: &site_game_title "Uncharted: The Nathan Drake Collection"
   app_ver: "01.02"
@@ -24,8 +28,6 @@
         - [ bytes, 0x009cf259, "41c686ba39000000" ]
 
 - patch:
-  6xnop: &6xnop "909090909090"
-  eax1: &eax1 "b801000000"
   title: "Uncharted: Drake's Fortune Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
@@ -109,7 +111,85 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ byte, 0x008d3c0b, 0x1 ]
+        - [ bytes, 0x010e22fe, "41c686ba39000000" ]
+
+- patch:
+  title: "Uncharted 2: Among Thieves Remastered"
+  app_ver: "01.02"
+  app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "big2-ps4_Shipping.elf" ]
+  patch_ver: "1.0"
+  name: "Restore DevKit Menus"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        # BP UCC
+        - [ bytes, 0x00893d88, *6xnop ]
+        # System, Rendering, BP Rendering
+        - [ bytes, 0x00893e97, "48e91f000000" ]
+        - [ bytes, 0x00895910, "e9c9000000" ]
+        # Player Menu
+        - [ bytes, 0x00c9c49c, "48e91f000000" ]
+        - [ bytes, 0x00c9ec64, "e9c5000000" ]
+        - [ bytes, 0x00c9ee37, *6xnop ]
+        - [ bytes, 0x00c9f245, "48e918000000" ]
+        - [ bytes, 0x00ca8845, "e90f010000" ]
+        # Collision
+        - [ bytes, 0x00895e57, "48e91f000000" ]
+        - [ bytes, 0x00896020, "e9c5000000" ]
+        # Gameplay
+        - [ bytes, 0x00896102, *6xnop ]
+        - [ bytes, 0x00939f7b, "48e91f000000" ]
+        - [ bytes, 0x00946d94, "e9c5000000" ]
+        - [ bytes, 0x00e38862, "e91a000000" ]
+        - [ bytes, 0x00e389f9, *5xnop ] # Select State Script
+        - [ bytes, 0x00e3aaa6, *5xnop ] # Manually Spawn State Script
+        - [ bytes, 0x00e3b158, "e9c5000000" ]
+        - [ bytes, 0x00e3c2c0, *al1ret ] # *RepopulateScriptSelectionMenu
+        - [ bytes, 0x00e3c710, *al1ret ] # *RepopulateScriptSelectionMenu
+        # Game Objects
+        - [ bytes, 0x008962c9, "48e91f000000" ]
+        - [ bytes, 0x0089cd70, "e9c5000000" ]
+        - [ bytes, 0x00896659, *5xnop ] # UpdateSelectProcessByNameMenu
+        - [ bytes, 0x008a9d70, *al1ret ] # *UpdateSelectProcessByNameMenu
+        # Levels
+        - [ bytes, 0x0089ce53, "48e91f000000" ]
+        - [ bytes, 0x0089dd20, "e9c5000000" ]
+        # Npc, Navigating Character
+        - [ bytes, 0x0089de03, "48e91f000000" ]
+        - [ bytes, 0x0089e160, "e9c5000000" ]
+        # Nav Mesh
+        - [ bytes, 0x0089e243, "48e91f000000" ]
+        - [ bytes, 0x0089e400, "e9c5000000" ]
+        # Profile
+        - [ bytes, 0x0089e4e3, *6xnop ]
+        # Actors
+        - [ bytes, 0x0089e788, "48e91c000000" ]
+        - [ bytes, 0x0089e7b2, "e9c5000000" ]
+        # Animation
+        - [ bytes, 0x0089e894, "48e91c000000" ]
+        - [ bytes, 0x0089e8be, "e9c5000000" ]
+        # Camera (entry only)
+        - [ bytes, 0x0089e9a0, *6xnop ]
+        # Clock
+        - [ bytes, 0x0089ea98, *6xnop ]
+        # Menu
+        - [ bytes, 0x0089fcb8, "48e91f000000" ]
+        - [ bytes, 0x008a0ac0, "e9c5000000" ]
+        # Audio
+        - [ bytes, 0x008a0ba2, *6xnop ]
+        # Particles (entry only)
+        - [ bytes, 0x008a81b9, "48e926000000" ]
+        - [ bytes, 0x008a82c0, "e9c5000000" ]
+        # Language, Recorder
+        - [ bytes, 0x008a83a3, "48e91f000000" ]
+        - [ bytes, 0x008a8b20, "e9c5000000" ]
+        # Scripts
+        - [ bytes, 0x008a8c03, *6xnop ]
+        # Actor Viewer
+        - [ bytes, 0x005faaac, "48e91f000000" ]
+        - [ bytes, 0x005fae95, "e9c5000000" ]
+        - [ bytes, 0x005fb370, "31c0c3" ]
 
 - patch:
   title: "Uncharted 3: Drake's Deception Remastered"
