@@ -50,10 +50,6 @@
         - [ byte, 0x00401c79, 0x01 ] # enable
         - [ bytes16, 0x00a92c41, 0x2e85 ] # save data to dbg render
         - [ bytes, 0x00404649, "4831c0" ] # hide "D: %d"
-        # rendering dev
-        # - [ bytes, , "" ] # call
-        # - [ bytes, , "" ] # crash fix
-        # - [ bytes, , "" ] # double line fix
         # weapon fixes
         - [ bytes, 0x0082dec6, "488b3553854601" ] # actor ptr
         - [ bytes, 0x0082de79, "e8f85dca00" ]     # call
@@ -121,6 +117,19 @@
         - [ utf8, 0x018a8f78, "rifle-improvised-fullauto      " ]
         - [ utf8, 0x018a8f98, "baseball-bat                   " ]
         - [ utf8, 0x018a8fb8, "hatchet                        " ]
+
+- patch:
+  title: "The Last of Us: Remastered"
+  app_ver: "01.00"
+  app_titleid: [ "CUSA00552", "CUSA00556", "CUSA00557", "CUSA00559" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Restore Full Rendering Menu"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x0045f63c, "e8ef246d00" ] # call
+        - [ bytes, 0x00b337b5, "e992010000" ] # crash fix
 
 - patch:
   title: "The Last of Us: Remastered"
@@ -223,6 +232,19 @@
   arch: orbis
   patch_list:
         - [ byte, 0x004021a4, 0x75 ]
+
+- patch:
+  title: "The Last of Us: Remastered"
+  app_ver: "01.11"
+  app_titleid: [ "CUSA00552", "CUSA00556", "CUSA00557", "CUSA00559" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Restore Full Rendering Menu"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x0046df6c, "e84f6b8400" ] # call
+        - [ bytes, 0x00cb6e75, "e993010000" ] # crash fix
 
 - patch:
   title: "The Last of Us: Remastered"
