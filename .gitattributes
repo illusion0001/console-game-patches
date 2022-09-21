@@ -1,0 +1,6 @@
+* text=lf
+
+*.yml text
+*.py text
+*.md text
+*.txt text
