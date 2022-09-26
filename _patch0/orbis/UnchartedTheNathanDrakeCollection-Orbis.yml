@@ -5,6 +5,58 @@
   al1ret: &al1ret "b001c3"
   title: "Uncharted: Drake's Fortune Remastered"
   site_game_title: &site_game_title "Uncharted: The Nathan Drake Collection"
+  app_ver: "01.00"
+  app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Enable Dev Menu"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x008a0d42, "41c686ba39000000" ]
+
+- patch:
+  title: "Uncharted: Drake's Fortune Remastered"
+  app_ver: "01.00"
+  app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "eboot.bin" ]
+  patch_ver: "1.0"
+  name: "Restore DevKit Menus"
+  author: "illusion, TheMagicalBlob"
+  arch: orbis
+  patch_list:
+        # Dev Menu Restore
+        - [ bytes, 0x006d00ae, *6xnop ] # build text
+        - [ bytes, 0x004de0db, *eax1 ]
+        - [ bytes, 0x004de11c, *eax1 ]
+        - [ bytes, 0x004de19b, "e9f80c0000" ] # no ps3 rendering
+        - [ bytes, 0x004dee98, *eax1 ]
+        - [ bytes, 0x004df5b1, *eax1 ]
+        - [ bytes, 0x0066df04, *eax1 ]
+        - [ bytes, 0x0066e158, *eax1 ]
+        - [ bytes, 0x004df732, *eax1 ]
+        - [ bytes, 0x004df793, *eax1 ]
+        - [ bytes, 0x004df7f4, *eax1 ]
+        - [ bytes, 0x004df855, *eax1 ]
+        - [ bytes, 0x004df956, *eax1 ]
+        - [ bytes, 0x004df9b7, *eax1 ]
+        - [ bytes, 0x004dfa50, *eax1 ]
+        - [ bytes, 0x004dfa96, *eax1 ]
+        - [ bytes, 0x004dfaa8, *eax1 ]
+        - [ bytes, 0x004dfaba, *eax1 ]
+        - [ bytes, 0x004dfb1b, *eax1 ]
+        - [ bytes, 0x004dfb7c, *eax1 ]
+        - [ bytes, 0x004dfbb5, *eax1 ]
+        - [ bytes, 0x004dfe10, *eax1 ]
+        - [ bytes, 0x004dfe73, *eax1 ]
+        - [ bytes, 0x004e002a, *eax1 ]
+        - [ bytes, 0x004fe7b4, *eax1 ]
+        - [ bytes, 0x00500b3e, *eax1 ]
+        # Quick Menu
+        - [ bytes, 0x006a3dff, *eax1 ]
+
+- patch:
+  title: "Uncharted: Drake's Fortune Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
   app_elf: [ "eboot.bin" ]
@@ -64,6 +116,122 @@
         - [ bytes, 0x004e011a, *eax1 ]
         # Quick Menu
         - [ bytes, 0x006a43ef, *eax1 ]
+
+- patch:
+  title: "Uncharted 2: Among Thieves Remastered"
+  app_ver: "01.00"
+  app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "big2-ps4_Shipping.elf" ]
+  patch_ver: "1.0"
+  name: "Intro Skip"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ byte, 0x01271464, 0x1 ]
+
+- patch:
+  title: "Uncharted 2: Among Thieves Remastered"
+  app_ver: "01.00"
+  app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "big2-ps4_Shipping.elf" ]
+  patch_ver: "1.0"
+  name: "Enable Dev Menu"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x00a373aa, "41c686ba39000000" ]
+
+- patch:
+  title: "Uncharted 2: Among Thieves Remastered"
+  app_ver: "01.00"
+  app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
+  app_elf: [ "big2-ps4_Shipping.elf" ]
+  patch_ver: "1.0"
+  name: "Restore DevKit Menus"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        # BP UCC
+        - [ bytes, 0x005c06bf, *eax1 ]
+        # Rendering
+        - [ bytes, 0x005c06ff, *eax1 ]
+        - [ bytes, 0x00941c93, *5xnop ]
+        - [ bytes, 0x005c0723, *5xnop ]
+        - [ bytes, 0x005c0c60, *5xnop ]
+        # Player Menu
+        - [ bytes, 0x007760d2, *eax1 ]
+        - [ bytes, 0x007760f6, *5xnop ]
+        - [ bytes, 0x007762a6, *5xnop ]
+        - [ bytes, 0x007762e3, *eax1 ]
+        - [ bytes, 0x00776317, *5xnop ]
+        - [ bytes, 0x00777699, *5xnop ]
+        # Collision
+        - [ bytes, 0x005c0d3d, "e92d000000" ]
+        - [ bytes, 0x005c0dc6, *5xnop ]
+        # Gameplay
+        - [ bytes, 0x005c0dcb, *eax1 ]
+        - [ bytes, 0x00638db2, *eax1 ]
+        - [ bytes, 0x00638dd6, *5xnop ]
+        - [ bytes, 0x0063bf08, *5xnop ]
+        - [ bytes, 0x0063c1e8, *eax1 ]
+        - [ bytes, 0x0063c20c, *5xnop ]
+        - [ bytes, 0x0063c4bd, *5xnop ]
+        # State scripts
+        - [ bytes, 0x00824d3a, *5xnop ]
+        - [ bytes, 0x00825840, "c3" ]
+        - [ bytes, 0x00825840, "c3" ]
+        - [ bytes, 0x0082580a, *5xnop ]
+        # Game objects
+        - [ bytes, 0x005c0e2b, *eax1 ]
+        - [ bytes, 0x005c0e4b, *5xnop ]
+        - [ bytes, 0x005c0ea7, *5xnop ]
+        - [ bytes, 0x005be650, "c3" ]
+        # Levels
+        - [ bytes, 0x005c0eac, *eax1 ]
+        - [ bytes, 0x005c0ed0, *5xnop ]
+        - [ bytes, 0x005c1250, *5xnop ]
+        # Npc, Navi
+        - [ bytes, 0x005c1255, *eax1 ]
+        - [ bytes, 0x005c1279, *5xnop ]
+        - [ bytes, 0x005c132c, *5xnop ]
+        # Nav-mesh
+        - [ bytes, 0x005c1331, *eax1 ]
+        - [ bytes, 0x005c1351, *5xnop ]
+        - [ bytes, 0x005c13ad, *5xnop ]
+        # Profile
+        - [ bytes, 0x005c13b2, *eax1 ]
+        # Actors
+        - [ bytes, 0x005c1441, *eax1 ]
+        - [ bytes, 0x005c1461, *5xnop ]
+        - [ bytes, 0x005c146e, *5xnop ]
+        # Animation
+        - [ bytes, 0x005c1473, *eax1 ]
+        - [ bytes, 0x005c1493, *5xnop ]
+        - [ bytes, 0x005c14a0, *5xnop ]
+        # Camera (entry)
+        - [ bytes, 0x005c14a5, *eax1 ]
+        # Clock
+        - [ bytes, 0x005c14dd, *eax1 ]
+        # Menu
+        - [ bytes, 0x005c1931, *eax1 ]
+        - [ bytes, 0x005c1955, *5xnop ]
+        - [ bytes, 0x005c1ca4, *5xnop ]
+        # Audio
+        - [ bytes, 0x005c1ca9, *eax1 ]
+        # Language
+        - [ bytes, 0x005c373d, *eax1 ]
+        - [ bytes, 0x005c3761, *5xnop ]
+        - [ bytes, 0x005c3a44, *5xnop ]
+        # Scripts
+        - [ bytes, 0x005c3a49, *eax1 ]
+        # Actor viewer
+        - [ bytes, 0x00402c93, *5xnop ]
+        - [ bytes, 0x00402cb7, *5xnop ]
+        - [ bytes, 0x00402d5e, *5xnop ]
+        - [ bytes, 0x00402d90, "31c0c3" ]
+        # debug draw?
+        - [ bytes, 0x0054c0a3, *eax1 ]
+        - [ bytes, 0x008f56d0, *eax1 ]
 
 - patch:
   title: "Uncharted 2: Among Thieves Remastered"
