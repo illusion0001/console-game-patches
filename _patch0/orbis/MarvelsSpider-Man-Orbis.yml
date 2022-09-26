@@ -2,7 +2,7 @@
   title: "Marvel's Spider-Man"
   app_ver: "01.19"
   app_titleid: [ "CUSA02299", "CUSA11993", "CUSA11994", "CUSA11995", "CUSA09751", "CUSA09893" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS"
   author: "illusion"
@@ -18,7 +18,7 @@
   title: "Marvel's Spider-Man"
   app_ver: "01.19"
   app_titleid: [ "CUSA02299", "CUSA11993", "CUSA11994", "CUSA11995", "CUSA09751", "CUSA09893" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Debug Menu"
   author: "illusion"

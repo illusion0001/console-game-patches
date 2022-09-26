@@ -2,7 +2,7 @@
   title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   app_titleid: [ "CUSA03500" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS Unlock (With Delta Time)"
   author: "illusion"
@@ -15,7 +15,7 @@
   title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   app_titleid: [ "CUSA03500" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
   author: "illusion"
@@ -31,7 +31,7 @@
   title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   app_titleid: [ "CUSA03500" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "720p Resolution"
   author: "illusion"
@@ -44,7 +44,7 @@
   title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   app_titleid: [ "CUSA03500" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "900p Resolution"
   author: "Whitehawkx"
@@ -56,7 +56,7 @@
   title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   app_titleid: [ "CUSA03500" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Bypass Network Check"
   author: "Unknown"
@@ -68,7 +68,7 @@
   title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   app_titleid: [ "CUSA03500" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Developer Debug Menu"
   author: "Whitehawkx"
@@ -80,7 +80,7 @@
   title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   app_titleid: [ "CUSA03500" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Top Menu Debug"
   author: "Whitehawkx"
@@ -93,7 +93,7 @@
   title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   app_titleid: [ "CUSA03500" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "All Menu Options"
   author: "Whitehawkx, Lance McDonald"
@@ -111,7 +111,7 @@
   title: "Dark Souls III: Network Stress Test"
   app_ver: "01.00"
   app_titleid: [ "CUSA03500" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Enable Video Recording"
   author: "Whitehawkx"

@@ -4,7 +4,7 @@
   title: *t2title
   app_ver: "01.09"
   app_titleid: *t2titleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"
@@ -314,7 +314,7 @@
   title: *t2title
   app_ver: "01.07"
   app_titleid: *t2titleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"
@@ -327,7 +327,7 @@
   title: *t2title
   app_ver: "01.07"
   app_titleid: *t2titleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Improved Infinite Ammo Cheat"
   author: "illusion"

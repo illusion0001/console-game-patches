@@ -2,7 +2,7 @@
   title: "Lost Judgment"
   app_ver: "01.11"
   app_titleid: [ "CUSA28183" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS"
   author: "illusion"
@@ -14,7 +14,7 @@
   title: "Lost Judgment"
   app_ver: "01.11"
   app_titleid: [ "CUSA28183" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Virtua Fighter 5 Unlocker"
   author: "Silent, illusion"

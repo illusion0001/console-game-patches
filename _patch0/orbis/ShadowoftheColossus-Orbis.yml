@@ -2,7 +2,7 @@
   title: "Shadow of the Colossus"
   app_ver: "01.00"
   app_titleid: [ "CUSA08034" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Debug Menu"
   author: "illusion"

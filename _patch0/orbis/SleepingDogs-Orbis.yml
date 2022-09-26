@@ -2,7 +2,7 @@
   title: "Sleeping Dogs: Definitive Edition"
   app_ver: "01.01"
   app_titleid: [ "CUSA01111", "CUSA01004" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"

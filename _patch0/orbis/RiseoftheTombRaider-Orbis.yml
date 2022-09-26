@@ -2,7 +2,7 @@
   title: "Rise of the Tomb Raider"
   app_ver: "01.06"
   app_titleid: [ "CUSA05794" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -15,7 +15,7 @@
   title: "Rise of the Tomb Raider"
   app_ver: "01.06"
   app_titleid: [ "CUSA05794" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch"
   author: "illusion"

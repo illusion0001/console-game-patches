@@ -2,7 +2,7 @@
   title: "The Last Gurdian"
   app_ver: "01.03"
   app_titleid: [ "CUSA03627", "CUSA03745" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"

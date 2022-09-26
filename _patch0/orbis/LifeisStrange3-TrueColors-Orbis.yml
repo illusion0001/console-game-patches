@@ -2,7 +2,7 @@
   title: "Life is Strange: True Colors"
   app_ver: "01.05"
   app_titleid: [ "CUSA17941", "CUSA24801" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -14,7 +14,7 @@
   title: "Life is Strange: True Colors"
   app_ver: "01.05"
   app_titleid: [ "CUSA17941", "CUSA24801" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"

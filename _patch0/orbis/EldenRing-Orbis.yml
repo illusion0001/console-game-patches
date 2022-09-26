@@ -5,7 +5,7 @@
   title: *edrtitle
   app_ver: "01.00"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
   author: "illusion"
@@ -20,7 +20,7 @@
   title: *edrtitle
   app_ver: "01.00"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
   author: "illusion"
@@ -39,7 +39,7 @@
   title: *edrtitle
   app_ver: "01.00"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
   author: "illusion"
@@ -55,7 +55,7 @@
   title: *edrtitle
   app_ver: "01.00"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
   author: "illusion"
@@ -70,7 +70,7 @@
   title: *edrtitle
   app_ver: "01.00"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
   author: "illusion"
@@ -83,7 +83,7 @@
   title: *edrtitle
   app_ver: "01.00"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Enable MenuMan.EnableTopMenuDebug"
   author: "illusion"
@@ -96,7 +96,7 @@
   title: *edrtitle
   app_ver: "01.00"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Skip Intro Logos"
   author: "illusion"
@@ -108,7 +108,7 @@
   title: *edrtitle
   app_ver: "01.05"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
   author: "illusion"
@@ -123,7 +123,7 @@
   title: *edrtitle
   app_ver: "01.05"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
   author: "illusion"
@@ -142,7 +142,7 @@
   title: *edrtitle
   app_ver: "01.05"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
   author: "illusion"
@@ -158,7 +158,7 @@
   title: *edrtitle
   app_ver: "01.05"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
   author: "illusion"
@@ -173,7 +173,7 @@
   title: *edrtitle
   app_ver: "01.05"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
   author: "illusion"
@@ -186,7 +186,7 @@
   title: *edrtitle
   app_ver: "01.05"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Enable MenuMan.EnableTopMenuDebug"
   author: "illusion"
@@ -199,7 +199,7 @@
   title: *edrtitle
   app_ver: "01.05"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Skip Intro Logos"
   author: "illusion"
@@ -211,7 +211,7 @@
   title: *edrtitle
   app_ver: "01.08"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
@@ -226,7 +226,7 @@
   title: *edrtitle
   app_ver: "01.08"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
@@ -239,7 +239,7 @@
   title: *edrtitle
   app_ver: "01.08"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
@@ -252,7 +252,7 @@
   title: *edrtitle
   app_ver: "01.08"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
@@ -265,7 +265,7 @@
   title: *edrtitle
   app_ver: "01.08"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Skip Intro Logos"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
@@ -277,7 +277,7 @@
   title: *edrtitle
   app_ver: "01.09"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS (For Base Console)"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
@@ -292,7 +292,7 @@
   title: *edrtitle
   app_ver: "01.09"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (720p for Base)"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
@@ -305,7 +305,7 @@
   title: *edrtitle
   app_ver: "01.09"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (900p for Base)"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
@@ -318,7 +318,7 @@
   title: *edrtitle
   app_ver: "01.09"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for Pro)"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"
@@ -331,7 +331,7 @@
   title: *edrtitle
   app_ver: "01.09"
   app_titleid: *edrtitleid
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Skip Intro Logos"
   author: "illusion, Ported by XiangBuChuMingZiNiMei BaiDuTieBa"

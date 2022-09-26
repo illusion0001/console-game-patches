@@ -2,7 +2,7 @@
   title: "Assassin's Creed III Remastered"
   app_ver: "01.03"
   app_titleid: [ "CUSA11560" ]
-  app_elf: [ "ac3_engine_orbis_fn.elf" ]
+  app_elf: "ac3_engine_orbis_fn.elf"
   patch_ver: "1.0"
   name: "60 FPS"
   author: "illusion"
@@ -15,7 +15,7 @@
   title: "Assassin's Creed Liberation Remastered"
   app_ver: "01.03"
   app_titleid: [ "CUSA11560" ]
-  app_elf: [ "acl_engine_orbis_fn.elf" ]
+  app_elf: "acl_engine_orbis_fn.elf"
   patch_ver: "1.0"
   name: "60 FPS"
   author: "illusion"

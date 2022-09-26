@@ -2,7 +2,7 @@
   title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   app_titleid: [ "CUSA03694", "CUSA04943", "CUSA00547" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Skip Intro Logos"
   author: "illusion"
@@ -14,7 +14,7 @@
   title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   app_titleid: [ "CUSA03694", "CUSA04943", "CUSA00547" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "3.0"
   name: "60 FPS"
   author: "illusion"
@@ -326,7 +326,7 @@
   title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   app_titleid: [ "CUSA03694", "CUSA04943", "CUSA00547" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Infinite Gravity Energy"
   author: "illusion"
@@ -338,7 +338,7 @@
   title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   app_titleid: [ "CUSA03694", "CUSA04943", "CUSA00547" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Most attacks does not hurt player"
   author: "illusion"
@@ -350,7 +350,7 @@
   title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   app_titleid: [ "CUSA03694", "CUSA04943", "CUSA00547" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Unlock All Costumes"
   author: "illusion"
@@ -364,7 +364,7 @@
   title: "Gravity Rush 2 (Gravity Daze 2)"
   app_ver: "01.11"
   app_titleid: [ "CUSA03694", "CUSA04943", "CUSA00547" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Unlock All Gestures"
   author: "illusion"

@@ -2,7 +2,7 @@
   title: "Resident Evil 2"
   app_ver: "01.05"
   app_titleid: [ "CUSA09193" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch"
   author: "illusion"
@@ -15,7 +15,7 @@
   title: "Resident Evil 2"
   app_ver: "01.05"
   app_titleid: [ "CUSA09193" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "30 FPS Limit (Proper Frame-Pacing)"
   author: "illusion"

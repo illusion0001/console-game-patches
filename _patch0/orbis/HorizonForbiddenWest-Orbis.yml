@@ -2,7 +2,7 @@
   title: "Horizon Forbidden West"
   app_ver: "01.17"
   app_titleid: [ "CUSA28561", "CUSA24705", "CUSA28563" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS"
   author: "illusion"
@@ -14,7 +14,7 @@
   title: "Horizon Forbidden West"
   app_ver: "01.17"
   app_titleid: [ "CUSA28561", "CUSA24705", "CUSA28563" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Disable Inital Boot on First Startup"
   author: "illusion"

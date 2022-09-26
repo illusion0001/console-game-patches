@@ -2,7 +2,7 @@
   title: "Final Fantasy XV (Final Fantasy 15)"
   app_ver: "01.30"
   app_titleid: [ "CUSA01633", "CUSA01615", "CUSA01706", "CUSA01570" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Frame Pacing Fix For 30FPS Modes"
   author: "illusion"

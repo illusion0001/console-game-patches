@@ -2,7 +2,7 @@
   title: "Bloodborne"
   app_ver: "01.09"
   app_titleid: [ "CUSA00900", "CUSA00207", "CUSA03173", "CUSA00208", "CUSA01363" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Skip Intro"
   author: "illusion"
@@ -16,7 +16,7 @@
   title: "Bloodborne"
   app_ver: "01.09"
   app_titleid: [ "CUSA00900", "CUSA00207", "CUSA03173", "CUSA00208", "CUSA01363" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
   author: "illusion, Lance McDonald (manfightdragon)"
@@ -32,7 +32,7 @@
   title: "Bloodborne"
   app_ver: "01.09"
   app_titleid: [ "CUSA00900", "CUSA00207", "CUSA03173", "CUSA00208", "CUSA01363" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Disable Chromatic Aberration"
   author: "illusion"
@@ -44,7 +44,7 @@
   title: "Bloodborne"
   app_ver: "01.09"
   app_titleid: [ "CUSA00900", "CUSA00207", "CUSA03173", "CUSA00208", "CUSA01363" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Disable Motion Blur"
   author: "illusion"
@@ -56,7 +56,7 @@
   title: "Bloodborne"
   app_ver: "01.09"
   app_titleid: [ "CUSA00900", "CUSA00207", "CUSA03173", "CUSA00208", "CUSA01363" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS (With Deltatime)"
   author: "Lance McDonald (manfightdragon)"
@@ -216,7 +216,7 @@
   title: "Bloodborne"
   app_ver: "01.09"
   app_titleid: [ "CUSA00900", "CUSA00207", "CUSA03173", "CUSA00208", "CUSA01363" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "Lance McDonald (manfightdragon)"

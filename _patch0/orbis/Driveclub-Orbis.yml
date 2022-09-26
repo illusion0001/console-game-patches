@@ -2,7 +2,7 @@
   title: Driveclub
   app_ver: "01.28"
   app_titleid: [ "CUSA00003", "CUSA00064" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "2.0"
   name: "60 FPS"
   author: "illusion, u/Charlie_Muggins"

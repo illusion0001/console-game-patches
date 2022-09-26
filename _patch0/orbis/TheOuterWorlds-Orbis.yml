@@ -2,7 +2,7 @@
   title: "The Outer Worlds"
   app_ver: "01.08"
   app_titleid: [ "CUSA16285", "CUSA13689" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -17,7 +17,7 @@
   title: "The Outer Worlds"
   app_ver: "01.08"
   app_titleid: [ "CUSA16285", "CUSA13689" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (720p)"
   author: "illusion"

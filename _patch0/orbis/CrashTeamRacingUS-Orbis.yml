@@ -2,7 +2,7 @@
   title: "Crash Team Racing Nitro-Fueled"
   app_ver: "01.21"
   app_titleid: [ "CUSA13795" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "2.0"
   name: "60 FPS Unlock"
   author: "illusion"
@@ -15,7 +15,7 @@
   title: "Crash Team Racing Nitro-Fueled"
   app_ver: "01.21"
   app_titleid: [ "CUSA13795" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Disable Motion Blur"
   author: "illusion"

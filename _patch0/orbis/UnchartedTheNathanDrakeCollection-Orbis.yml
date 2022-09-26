@@ -7,7 +7,7 @@
   site_game_title: &site_game_title "Uncharted: The Nathan Drake Collection"
   app_ver: "01.00"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"
@@ -19,7 +19,7 @@
   title: "Uncharted: Drake's Fortune Remastered"
   app_ver: "01.00"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Restore DevKit Menus"
   author: "illusion, TheMagicalBlob"
@@ -59,7 +59,7 @@
   title: "Uncharted: Drake's Fortune Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Intro Skip"
   author: "illusion"
@@ -71,7 +71,7 @@
   title: "Uncharted: Drake's Fortune Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"
@@ -83,7 +83,7 @@
   title: "Uncharted: Drake's Fortune Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Restore DevKit Menus"
   author: "illusion, TheMagicalBlob"
@@ -121,7 +121,7 @@
   title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.00"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "big2-ps4_Shipping.elf" ]
+  app_elf: "big2-ps4_Shipping.elf"
   patch_ver: "1.0"
   name: "Intro Skip"
   author: "illusion"
@@ -133,7 +133,7 @@
   title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.00"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "big2-ps4_Shipping.elf" ]
+  app_elf: "big2-ps4_Shipping.elf"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"
@@ -145,7 +145,7 @@
   title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.00"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "big2-ps4_Shipping.elf" ]
+  app_elf: "big2-ps4_Shipping.elf"
   patch_ver: "1.0"
   name: "Restore DevKit Menus"
   author: "illusion"
@@ -237,7 +237,7 @@
   title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.00"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "big2-ps4_Shipping.elf" ]
+  app_elf: "big2-ps4_Shipping.elf"
   patch_ver: "1.0"
   name: "Bug Fix: Quit to Menu Crash"
   author: "ZEROx, illusion"
@@ -261,7 +261,7 @@
   title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "big2-ps4_Shipping.elf" ]
+  app_elf: "big2-ps4_Shipping.elf"
   patch_ver: "1.0"
   name: "Intro Skip"
   author: "illusion"
@@ -273,7 +273,7 @@
   title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "big2-ps4_Shipping.elf" ]
+  app_elf: "big2-ps4_Shipping.elf"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"
@@ -285,7 +285,7 @@
   title: "Uncharted 2: Among Thieves Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "big2-ps4_Shipping.elf" ]
+  app_elf: "big2-ps4_Shipping.elf"
   patch_ver: "1.0"
   name: "Restore DevKit Menus"
   author: "illusion"
@@ -363,7 +363,7 @@
   title: "Uncharted 3: Drake's Deception Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "big3-ps4_Shipping.elf" ]
+  app_elf: "big3-ps4_Shipping.elf"
   patch_ver: "1.0"
   name: "Intro Skip"
   author: "illusion"
@@ -375,7 +375,7 @@
   title: "Uncharted 3: Drake's Deception Remastered"
   app_ver: "01.02"
   app_titleid: [ "CUSA02343", "CUSA02344", "CUSA02826", "CUSA02320" ]
-  app_elf: [ "big3-ps4_Shipping.elf" ]
+  app_elf: "big3-ps4_Shipping.elf"
   patch_ver: "1.0"
   name: "Enable Dev Menu"
   author: "illusion"

@@ -2,7 +2,7 @@
   title: "Spyro Reignited Trilogy"
   app_ver: "01.03"
   app_titleid: [ "CUSA12085" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS"
   author: "illusion"
@@ -17,7 +17,7 @@
   title: "Spyro Reignited Trilogy"
   app_ver: "01.03"
   app_titleid: [ "CUSA12085" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (1080p for PS4 Pro)"
   author: "illusion"
@@ -33,7 +33,7 @@
   title: "Spyro Reignited Trilogy"
   app_ver: "01.03"
   app_titleid: [ "CUSA12085" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (900p for PS4/PS4 Pro)"
   author: "illusion"
@@ -49,7 +49,7 @@
   title: "Spyro Reignited Trilogy"
   app_ver: "01.03"
   app_titleid: [ "CUSA12085" ]
-  app_elf: [ "eboot.bin" ]
+  app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "Resolution Patch (720p for PS4/PS4 Pro)"
   author: "illusion"
