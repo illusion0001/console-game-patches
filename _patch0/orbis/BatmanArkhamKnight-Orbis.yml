@@ -1,27 +1,26 @@
 - patch:
   title: "Batman: Arkham Knight"
-  app_ver: "01.14"
+  app_ver: "01.15"
   app_titleid: [ "CUSA00133" ]
   app_elf: "eboot.bin"
   patch_ver: "1.0"
   name: "60 FPS Unlock"
   author: "illusion"
-  note: "CPU Limited. For use with 9th generation of game consoles."
   arch: orbis
   patch_list:
-        - [ bytes, 0x00a12abf, "00" ]
-        - [ bytes, 0x00a13f22, "85" ]
-        - [ bytes, 0x00a13ca8, "04" ]
+        - [ bytes, 0x009fa57e, "be00000000" ]   # 60fps
+        - [ bytes, 0x009fb766, "41bc04000000" ] # tripe buffer
+        - [ bytes, 0x009fb9e1, "0f85a9000000" ] # no fixed timestep
         # sync modes
         # 00 no output
         # 01 untested
-        # 02 full adaptive sync // when usevsync is off
+        # 02 full adaptive sync
         # 03 double buffer adaptive sync // default
         # 04 triple buffering
 
 - patch:
   title: "Batman: Arkham Knight"
-  app_ver: "01.14"
+  app_ver: "01.15"
   app_titleid: [ "CUSA00133" ]
   app_elf: "eboot.bin"
   patch_ver: "1.0"
@@ -29,5 +28,5 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ bytes32, 0x02b68034, 1280 ]
-        - [ bytes32, 0x02b68038, 720  ]
+        - [ bytes32, 0x02b04014, 1280 ]
+        - [ bytes32, 0x02b04018, 720  ]
