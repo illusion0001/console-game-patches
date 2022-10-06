@@ -1,11 +1,10 @@
-name: Push workflow dispatch
+name: Pack zip and checks
 
 on:
   push:
     paths:
       - '**/*.yml'
       - '**/*.py'
-    branches: main
 
 jobs:
   checks:
@@ -18,14 +17,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: recursive
 
       - name: Setup dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          npm install -g jsonrepair
+          make
 
-      - name: Pack zip
+      - name: Process files
         run: |
           mkdir -p output/yml
+          mkdir -p output/json
           python file-autogen.py
+          python yml2json.py
           current=$(date '+%Y-%m-%d %H:%M:%S %A (%Z %z)')
           msg="Patch database version: $current"
           msg_md="Patch archive built on: \`$current\`"
@@ -33,11 +39,35 @@ jobs:
           echo $msg > build.txt
           echo $msg_md > patch_built.md
           mv output patches
+
+      - name: Repair json files
+        run: |
+          echo "running jsonrepair: https://github.com/josdejong/jsonrepair"
+          i=0
+          FILES="patches/json/*"
+          for f in $FILES
+          do
+            jsonrepair $f --overwrite
+            python json_check.py $f
+            ./example-01.exe $f
+            ((i=i+1))
+          done
+          echo "$i file(s) verified"
+
+      - name: Pack zip
+        run: |
           zip -r patch1.zip patches/*
           mkdir out
           cp patch1.zip CNAME build.txt patch_built.md .github/README.md out/
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: patch1
+          path: patches/*
+
       - name: Deploy
+        if: github.ref_name == 'main'
         run: |
           cd out
           git init
@@ -47,6 +77,7 @@ jobs:
           git commit -m 'Deploy patch asset'
 
       - name: Force push to destination branch
+        if: github.ref_name == 'main'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -55,11 +86,13 @@ jobs:
           directory: out
 
       - name: Checkout website
+        if: github.ref_name == 'main'
         uses: actions/checkout@v3
         with:
           repository: illusion0001/illusion0001.github.io
 
       - name: Run Website Workflow dispatch
+        if: github.ref_name == 'main'
         env:
           GITHUB_TOKEN: ${{ secrets.website }}
         run: gh workflow run jekyll.yml
