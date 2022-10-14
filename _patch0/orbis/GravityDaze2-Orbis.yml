@@ -15,6 +15,19 @@
   app_ver: "01.11"
   app_titleid: [ "CUSA03694", "CUSA04943", "CUSA00547" ]
   app_elf: "eboot.bin"
+  patch_ver: "1.0"
+  name: "Remove save copy protection"
+  author: "illusion"
+  note: "Removes CE-33678-7 error message when loading save from other accounts."
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x0095de96, "909090909090" ]
+
+- patch:
+  title: "Gravity Rush 2 (Gravity Daze 2)"
+  app_ver: "01.11"
+  app_titleid: [ "CUSA03694", "CUSA04943", "CUSA00547" ]
+  app_elf: "eboot.bin"
   patch_ver: "3.0"
   name: "60 FPS"
   author: "illusion"
