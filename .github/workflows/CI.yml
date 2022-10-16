@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '**/*.yml'
+      - '**/*.json'
       - '**/*.py'
 
 jobs:
@@ -26,33 +27,30 @@ jobs:
           npm install -g jsonrepair
           make
 
+      - name: Verify files
+        run: |
+          i=0
+          FILES="_patch0/orbis_new/*.json"
+          for f in $FILES
+          do
+            python json_check.py $f
+            ./example-01.exe $f
+            ((i=i+1))
+          done
+          echo "$i file(s) verified"
+
       - name: Process files
         run: |
-          mkdir -p output/yml
           mkdir -p output/json
           python file-autogen.py
-          python yml2json.py
           current=$(date '+%Y-%m-%d %H:%M:%S %A (%Z %z)')
           msg="Patch database version: $current"
           msg_md="Patch archive built on: \`$current\`"
           echo $msg > output/build.txt
           echo $msg > build.txt
           echo $msg_md > patch_built.md
+          echo $msg
           mv output patches
-
-      - name: Repair json files
-        run: |
-          echo "running jsonrepair: https://github.com/josdejong/jsonrepair"
-          i=0
-          FILES="patches/json/*"
-          for f in $FILES
-          do
-            jsonrepair $f --overwrite
-            python json_check.py $f
-            ./example-01.exe $f
-            ((i=i+1))
-          done
-          echo "$i file(s) verified"
 
       - name: Pack zip
         run: |

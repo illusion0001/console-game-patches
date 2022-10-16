@@ -37,6 +37,10 @@ for patches in glob.glob('_patch0/orbis/*.yml', recursive=True):
     for i in range(0, len(patch_file)):
       json_str += '    {\n'
       json_str += ('      "{}": "{}",\n'.format(title_str, patch_file[i].get(title_str,'')))
+      json_str += ('      "{}": [ '.format(app_titleid_str))
+      for ids in range(0, len(patch_file[i][app_titleid_str])):
+        json_str += ('\"{}\", '.format(patch_file[i].get(app_titleid_str,'')[ids]))
+      json_str += ('],\n')
       json_str += ('      "{}": "{}",\n'.format(app_ver_str, patch_file[i].get(app_ver_str,'')))
       json_str += ('      "{}": "{}",\n'.format(app_elf_str, patch_file[i].get(app_elf_str,'')))
       json_str += ('      "{}": "{}",\n'.format(patch_ver_str, patch_file[i].get(patch_ver_str,'')))
@@ -61,6 +65,9 @@ for patches in glob.glob('_patch0/orbis/*.yml', recursive=True):
             json_str += ('        { "type": "%s", "addr": "0x%08x", "value": "%s" },\n' % ('bytes64',patch_data[1],double_to_hex(patch_data[2])))
       json_str += '      ]\n'
       json_str += '    },\n'
+      newfile = ('output/json/{}'.format(patches.replace('.yml','.json')))
+      with open(newfile, 'w') as fr1:
+        fr1.write(json_str)
       for title_ids in patch_file:
         for ids in range(0, len(title_ids[app_titleid_str])):
           output = ("output/json/{}.json".format(title_ids[app_titleid_str][ids]))
