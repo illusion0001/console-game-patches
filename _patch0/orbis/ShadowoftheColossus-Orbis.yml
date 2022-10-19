@@ -8,4 +8,4 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ byte, 0x00424410, 0xc3 ]
+        - [ bytes, 0x0042437f, "0f1f440000" ]
