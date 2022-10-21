@@ -312,6 +312,30 @@
 
 - patch:
   title: *t2title
+  app_ver: "01.09"
+  app_titleid: *t2titleid
+  app_elf: "eboot.bin"
+  patch_ver: "1.0"
+  name: "60 FPS"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x02bbb5f0, "31c0c3" ]
+
+- patch:
+  title: *t2title
+  app_ver: "01.09"
+  app_titleid: *t2titleid
+  app_elf: "eboot.bin"
+  patch_ver: "1.0"
+  name: "1080p for PS4 Pro"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ bytes32, 0x00a17631, 0x00000000 ]
+
+- patch:
+  title: *t2title
   app_ver: "01.07"
   app_titleid: *t2titleid
   app_elf: "eboot.bin"
