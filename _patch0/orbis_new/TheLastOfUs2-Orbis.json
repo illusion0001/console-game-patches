@@ -310,6 +310,32 @@
     {
       "title": "The Last of Us: Part II",
       "app_titleid": [ "CUSA07820", "CUSA10249", "CUSA13986", "CUSA14006" ],
+      "app_ver": "01.09",
+      "app_elf": "eboot.bin",
+      "patch_ver": "1.0",
+      "name": "60 FPS",
+      "author": "illusion",
+      "note": "",
+      "patch_list": [
+        { "type": "bytes", "addr": "0x02bbb5f0", "value": "31c0c3" }
+      ]
+    },
+    {
+      "title": "The Last of Us: Part II",
+      "app_titleid": [ "CUSA07820", "CUSA10249", "CUSA13986", "CUSA14006" ],
+      "app_ver": "01.09",
+      "app_elf": "eboot.bin",
+      "patch_ver": "1.0",
+      "name": "1080p for PS4 Pro",
+      "author": "illusion",
+      "note": "",
+      "patch_list": [
+        { "type": "bytes32", "addr": "0x00a17631", "value": "0x00000000" }
+      ]
+    },
+    {
+      "title": "The Last of Us: Part II",
+      "app_titleid": [ "CUSA07820", "CUSA10249", "CUSA13986", "CUSA14006" ],
       "app_ver": "01.07",
       "app_elf": "eboot.bin",
       "patch_ver": "1.0",
