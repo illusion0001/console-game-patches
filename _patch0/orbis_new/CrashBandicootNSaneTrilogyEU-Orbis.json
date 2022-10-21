@@ -1,0 +1,67 @@
+{
+  "patch": [
+    {
+      "title": "Crash Bandicoot N. Sane Trilogy",
+      "app_titleid": [ "CUSA07399" ],
+      "app_ver": "01.07",
+      "app_elf": "eboot.bin",
+      "patch_ver": "2.0",
+      "name": "60 FPS",
+      "author": "illusion",
+      "note": "",
+      "patch_list": [
+        { "type": "bytes", "addr": "0x00f52bd6", "value": "41899788040000" }
+      ]
+    },
+    {
+      "title": "Crash Bandicoot N. Sane Trilogy",
+      "app_titleid": [ "CUSA07399" ],
+      "app_ver": "01.07",
+      "app_elf": "eboot.bin",
+      "patch_ver": "2.0",
+      "name": "Resolution Patch (1080p for PS4 Pro)",
+      "author": "illusion",
+      "note": "",
+      "patch_list": [
+        { "type": "bytes32", "addr": "0x01c75680", "value": "0x3f800000" }
+      ]
+    },
+    {
+      "title": "Crash Bandicoot N. Sane Trilogy",
+      "app_titleid": [ "CUSA07399" ],
+      "app_ver": "01.07",
+      "app_elf": "eboot.bin",
+      "patch_ver": "2.0",
+      "name": "Resolution Patch (900p for PS4 Pro)",
+      "author": "illusion",
+      "note": "",
+      "patch_list": [
+        { "type": "bytes32", "addr": "0x01c75680", "value": "0x3f547ae1" }
+      ]
+    },
+    {
+      "title": "Crash Bandicoot N. Sane Trilogy",
+      "app_titleid": [ "CUSA07399" ],
+      "app_ver": "01.07",
+      "app_elf": "eboot.bin",
+      "patch_ver": "2.0",
+      "name": "Resolution Patch (720p for PS4 Pro)",
+      "author": "illusion",
+      "note": "",
+      "patch_list": [
+        { "type": "bytes32", "addr": "0x01c75680", "value": "0x3f2b851f" }
+      ]
+    },
+    {
+      "title": "Crash Bandicoot N. Sane Trilogy",
+      "app_titleid": [ "CUSA07399" ],
+      "app_ver": "01.07",
+      "app_elf": "eboot.bin",
+      "patch_ver": "2.0",
+      "name": "Resolution Patch (540p for PS4 Pro)",
+      "author": "illusion",
+      "note": "",
+      "patch_list": [
+        { "type": "bytes32", "addr": "0x01c75680", "value": "0x3f000000" }
+      ]
+    }]}
