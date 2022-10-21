@@ -60,13 +60,15 @@ jobs:
         run: |
           zip -r patch1.zip patches/*
           mkdir out
+          mkdir patch1_artifact 
+          mv patches patch1_artifact/patches
           cp patch1.zip CNAME build.txt patch_built.md .github/README.md out/
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: patch1
-          path: patches/*
+          path: patch1_artifact
 
       - name: Sync json files
         if: github.ref_name == 'main'
