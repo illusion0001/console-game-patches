@@ -65,7 +65,8 @@ for patches in glob.glob('_patch0/orbis/*.yml', recursive=True):
             json_str += ('        { "type": "%s", "addr": "0x%08x", "value": "%s" },\n' % ('bytes64',patch_data[1],double_to_hex(patch_data[2])))
       json_str += '      ]\n'
       json_str += '    },\n'
-      newfile = ('output/json/{}'.format(patches.replace('.yml','.json')))
+      file = Path(patches.replace('.yml','.json')).name
+      newfile = ('_patch0/orbis_new/{}'.format(file))
       with open(newfile, 'w') as fr1:
         fr1.write(json_str)
       for title_ids in patch_file:

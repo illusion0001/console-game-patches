@@ -27,12 +27,17 @@ jobs:
           npm install -g jsonrepair
           make
 
-      - name: Verify files
+      - name: Verify and Sync files
         run: |
+          echo "running jsonrepair: https://github.com/josdejong/jsonrepair"
+          mkdir -p output/json
+          mkdir -p _patch0/orbis_new
+          python yml2json.py
           i=0
           FILES="_patch0/orbis_new/*.json"
           for f in $FILES
           do
+            jsonrepair $f --overwrite
             python json_check.py $f
             ./example-01.exe $f
             ((i=i+1))
@@ -41,7 +46,6 @@ jobs:
 
       - name: Process files
         run: |
-          mkdir -p output/json
           python file-autogen.py
           current=$(date '+%Y-%m-%d %H:%M:%S %A (%Z %z)')
           msg="Patch database version: $current"
@@ -63,6 +67,18 @@ jobs:
         with:
           name: patch1
           path: patches/*
+
+      - name: Sync json files
+        if: github.ref_name == 'main'
+        run: |
+          time=`date '+%Y-%m-%d %H:%M:%S %A (%Z %z)'`
+          msg="Sync JSON files - \`$time\`"
+          echo $msg
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name  "github-actions[bot]"
+          git add _patch0/orbis_new/*.json
+          git commit -m "$msg" || true
+          git push origin || true
 
       - name: Deploy
         if: github.ref_name == 'main'
