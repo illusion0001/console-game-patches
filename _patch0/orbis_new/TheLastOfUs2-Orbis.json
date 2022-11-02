@@ -11,7 +11,7 @@
       "note": "",
       "patch_list": [
         { "type": "bytes", "addr": "0x00a141dd", "value": "b000" },
-        { "type": "bytes32", "addr": "0x00ba0ecf", "value": "0x3f800000" },
+        { "type": "float32", "addr": "0x00ba0ecf", "value": "1.0" },
         { "type": "bytes", "addr": "0x0174ef88", "value": "48e823c02b01" },
         { "type": "bytes", "addr": "0x02a0afb1", "value": "8b4f60" },
         { "type": "bytes", "addr": "0x02a0afb4", "value": "48891d75509f00" },
@@ -344,7 +344,7 @@
       "note": "",
       "patch_list": [
         { "type": "byte", "addr": "0x005d26b8", "value": "0x75" },
-        { "type": "bytes32", "addr": "0x0075f70f", "value": "0x3f800000" }
+        { "type": "float32", "addr": "0x0075f70f", "value": "1.0" }
       ]
     },
     {

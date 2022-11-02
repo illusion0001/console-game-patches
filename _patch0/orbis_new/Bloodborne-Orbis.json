@@ -25,7 +25,7 @@
       "author": "illusion, Lance McDonald (manfightdragon)",
       "note": "Caps framerate to 30 with proper frame pacing.",
       "patch_list": [
-        { "type": "bytes32", "addr": "0x02434883", "value": "0x3c888889" },
+        { "type": "float32", "addr": "0x02434883", "value": "0.016666667" },
         { "type": "bytes", "addr": "0x02ad61df", "value": "be010000004989dc9090909090" }
       ]
     },
