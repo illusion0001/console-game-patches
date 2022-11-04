@@ -4,7 +4,8 @@ import yaml
 import os
 import json
 
-for patches in glob.glob('_patch0/orbis_new/*.json', recursive=True):
+if __name__ == '__main__':
+  for patches in glob.glob('_patch0/orbis_new/*.json', recursive=True):
     app_titleid_str = 'app_titleid'
     with open(patches, 'r') as file:
       patch_file = json.load(file)

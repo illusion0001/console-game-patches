@@ -47,6 +47,7 @@ jobs:
       - name: Process files
         run: |
           python file-autogen.py
+          python remove-ids.py
           current=$(date '+%Y-%m-%d %H:%M:%S %A (%Z %z)')
           msg="Patch database version: $current"
           msg_md="Patch archive built on: \`$current\`"
