@@ -52,6 +52,7 @@ jobs:
           msg="Patch database version: $current"
           msg_md="Patch archive built on: \`$current\`"
           echo $msg > output/build.txt
+          echo $msg > output/json/build.txt
           echo $msg > build.txt
           echo $msg_md > patch_built.md
           echo $msg

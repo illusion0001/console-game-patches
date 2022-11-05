@@ -47,7 +47,7 @@ for patches in glob.glob('_patch0/orbis/*.yml', recursive=True):
       for patch_data in patch_file[i]['patch_list']:
         bytes = ''
         if (patch_data[0] == 'bytes'):
-          json_str += ('        { "type": "%s", "addr": "0x%08x", "value": "%s" },\n' % (patch_data[0],patch_data[1],replace_all(patch_data[2],rlist))) # hack for json
+          json_str += ('        { "type": "%s", "addr": "0x%08x", "value": "%s" },\n' % (patch_data[0],patch_data[1],patch_data[2].replace(' ', '')))
         elif (patch_data[0] == 'byte'):
             json_str += ('        { "type": "%s", "addr": "0x%08x", "value": "0x%02x" },\n' % (patch_data[0],patch_data[1],patch_data[2]))
         elif (patch_data[0] == 'bytes16'):
