@@ -2,7 +2,9 @@
   "patch": [
     {
       "title": "Call of Duty: Black Ops 4 (IIII)",
-      "app_titleid": [ "CUSA11100" ],
+      "app_titleid": [
+        "CUSA11100"
+      ],
       "app_ver": "01.00",
       "app_elf": "eboot.bin",
       "patch_ver": "1.0",
@@ -10,6 +12,12 @@
       "author": "DeathRGH",
       "note": "",
       "patch_list": [
-        { "type": "bytes", "addr": "0x00e3103b", "value": "4189d1" }
+        {
+          "type": "bytes",
+          "addr": "0x00e3103b",
+          "value": "4189d1"
+        }
       ]
-    }]}
+    }
+  ]
+}

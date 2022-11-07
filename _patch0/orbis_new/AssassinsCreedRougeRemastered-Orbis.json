@@ -2,7 +2,9 @@
   "patch": [
     {
       "title": "Assassin's Creed Rogue Remastered",
-      "app_titleid": [ "CUSA10123" ],
+      "app_titleid": [
+        "CUSA10123"
+      ],
       "app_ver": "01.01",
       "app_elf": "eboot.bin",
       "patch_ver": "1.0",
@@ -10,6 +12,12 @@
       "author": "illusion",
       "note": "",
       "patch_list": [
-        { "type": "bytes", "addr": "0x00dba4ca", "value": "be00000000" }
+        {
+          "type": "bytes",
+          "addr": "0x00dba4ca",
+          "value": "be00000000"
+        }
       ]
-    }]}
+    }
+  ]
+}

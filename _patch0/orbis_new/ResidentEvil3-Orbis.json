@@ -2,7 +2,9 @@
   "patch": [
     {
       "title": "Resident Evil 3",
-      "app_titleid": [ "CUSA14168" ],
+      "app_titleid": [
+        "CUSA14168"
+      ],
       "app_ver": "01.05",
       "app_elf": "eboot.bin",
       "patch_ver": "1.0",
@@ -10,6 +12,12 @@
       "author": "illusion",
       "note": "",
       "patch_list": [
-        { "type": "bytes32", "addr": "0x0349c9fc", "value": "0x3f2b851f" }
+        {
+          "type": "bytes32",
+          "addr": "0x0349c9fc",
+          "value": "0x3f2b851f"
+        }
       ]
-    }]}
+    }
+  ]
+}

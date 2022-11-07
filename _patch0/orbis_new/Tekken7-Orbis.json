@@ -2,7 +2,9 @@
   "patch": [
     {
       "title": "Tekken 7",
-      "app_titleid": [ "CUSA05972" ],
+      "app_titleid": [
+        "CUSA05972"
+      ],
       "app_ver": "04.00",
       "app_elf": "eboot.bin",
       "patch_ver": "1.0",
@@ -10,6 +12,12 @@
       "author": "illusion",
       "note": "",
       "patch_list": [
-        { "type": "bytes", "addr": "0x01efdedc", "value": "48e9" }
+        {
+          "type": "bytes",
+          "addr": "0x01efdedc",
+          "value": "48e9"
+        }
       ]
-    }]}
+    }
+  ]
+}

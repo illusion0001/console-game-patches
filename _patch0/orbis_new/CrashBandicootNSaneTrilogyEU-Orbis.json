@@ -2,7 +2,9 @@
   "patch": [
     {
       "title": "Crash Bandicoot N. Sane Trilogy",
-      "app_titleid": [ "CUSA07399" ],
+      "app_titleid": [
+        "CUSA07399"
+      ],
       "app_ver": "01.07",
       "app_elf": "eboot.bin",
       "patch_ver": "2.0",
@@ -10,12 +12,18 @@
       "author": "illusion",
       "note": "",
       "patch_list": [
-        { "type": "bytes", "addr": "0x00f52bd6", "value": "41899788040000" }
+        {
+          "type": "bytes",
+          "addr": "0x00f52bd6",
+          "value": "41899788040000"
+        }
       ]
     },
     {
       "title": "Crash Bandicoot N. Sane Trilogy",
-      "app_titleid": [ "CUSA07399" ],
+      "app_titleid": [
+        "CUSA07399"
+      ],
       "app_ver": "01.07",
       "app_elf": "eboot.bin",
       "patch_ver": "2.0",
@@ -23,12 +31,18 @@
       "author": "illusion",
       "note": "",
       "patch_list": [
-        { "type": "float32", "addr": "0x01c75680", "value": "1.0" }
+        {
+          "type": "float32",
+          "addr": "0x01c75680",
+          "value": "1.0"
+        }
       ]
     },
     {
       "title": "Crash Bandicoot N. Sane Trilogy",
-      "app_titleid": [ "CUSA07399" ],
+      "app_titleid": [
+        "CUSA07399"
+      ],
       "app_ver": "01.07",
       "app_elf": "eboot.bin",
       "patch_ver": "2.0",
@@ -36,12 +50,18 @@
       "author": "illusion",
       "note": "",
       "patch_list": [
-        { "type": "float32", "addr": "0x01c75680", "value": "0.83" }
+        {
+          "type": "float32",
+          "addr": "0x01c75680",
+          "value": "0.83"
+        }
       ]
     },
     {
       "title": "Crash Bandicoot N. Sane Trilogy",
-      "app_titleid": [ "CUSA07399" ],
+      "app_titleid": [
+        "CUSA07399"
+      ],
       "app_ver": "01.07",
       "app_elf": "eboot.bin",
       "patch_ver": "2.0",
@@ -49,12 +69,18 @@
       "author": "illusion",
       "note": "",
       "patch_list": [
-        { "type": "float32", "addr": "0x01c75680", "value": "0.67" }
+        {
+          "type": "float32",
+          "addr": "0x01c75680",
+          "value": "0.67"
+        }
       ]
     },
     {
       "title": "Crash Bandicoot N. Sane Trilogy",
-      "app_titleid": [ "CUSA07399" ],
+      "app_titleid": [
+        "CUSA07399"
+      ],
       "app_ver": "01.07",
       "app_elf": "eboot.bin",
       "patch_ver": "2.0",
@@ -62,6 +88,12 @@
       "author": "illusion",
       "note": "",
       "patch_list": [
-        { "type": "float32", "addr": "0x01c75680", "value": "0.5" }
+        {
+          "type": "float32",
+          "addr": "0x01c75680",
+          "value": "0.5"
+        }
       ]
-    }]}
+    }
+  ]
+}
