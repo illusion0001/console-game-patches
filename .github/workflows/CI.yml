@@ -32,6 +32,8 @@ jobs:
           echo "running jsonrepair: https://github.com/josdejong/jsonrepair"
           mkdir -p output/json
           mkdir -p _patch0/orbis_new
+          rm -rf _patch0/orbis_new/*
+          git add _patch0/orbis_new/*.json
           python yml2json.py
           i=0
           FILES="_patch0/orbis_new/*.json"
