@@ -24,7 +24,7 @@
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
   author: "illusion"
-  note: "Fixes Framepacing issues and caps framerate to 30FPS."
+  note: "Fixes framepacing issues at the cost of slightly increased input latency."
   arch: orbis
   patch_list:
         - [ bytes, 0x02021e32, "48b90900000009000000" ]
@@ -127,7 +127,7 @@
   patch_ver: "1.0"
   name: "30 FPS Fix (Proper Frame Pacing)"
   author: "illusion"
-  note: "Fixes Framepacing issues and caps framerate to 30FPS."
+  note: "Fixes framepacing issues at the cost of slightly increased input latency."
   arch: orbis
   patch_list:
         - [ bytes, 0x02106663, "48b90900000009000000" ]
@@ -338,3 +338,92 @@
   arch: orbis
   patch_list:
         - [ byte, 0x1C8032A, 0x1 ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.10"
+  app_titleid: *edrtitleid
+  app_elf: "eboot.bin"
+  patch_ver: "1.0"
+  name: "60 FPS (For Base Console)"
+  author: "illusion"
+  note: "Unlocks framerate on Base/Slim PS4"
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x020e8083, "b805000000" ]
+        - [ bytes, 0x020e8088, "48b90900000009000000" ]
+        - [ bytes, 0x020e8092, "0f1f840000000000" ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.10"
+  app_titleid: *edrtitleid
+  app_elf: "eboot.bin"
+  patch_ver: "1.0"
+  name: "30 FPS Framepacing Fix"
+  author: "illusion"
+  note: "Fixes framepacing issues at the cost of slightly increased input latency."
+  arch: orbis
+  patch_list:
+        - [ bytes, 0x020e8083, "b805000000" ]
+        - [ bytes, 0x020e8088, "48b90900000009000000" ]
+        - [ bytes, 0x020e8092, "0f1f840000000000" ]
+        - [ bytes, 0x032bd760, "be01000000" ]
+        - [ bytes, 0x032bd765, "ff25a520e600" ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.10"
+  app_titleid: *edrtitleid
+  app_elf: "eboot.bin"
+  patch_ver: "1.0"
+  name: "Resolution Patch (720p for Base)"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        # no aslr addr
+        # - [ bytes32, 0x04258e7c, 1280 ]
+        # - [ bytes32, 0x04258e80, 720  ]
+        - [ bytes32, 0x040c0e7c, 1280 ]
+        - [ bytes32, 0x040c0e80, 720  ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.10"
+  app_titleid: *edrtitleid
+  app_elf: "eboot.bin"
+  patch_ver: "1.0"
+  name: "Resolution Patch (900p for Base)"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        # no aslr addr
+        # - [ bytes32, 0x04258e7c, 1600 ]
+        # - [ bytes32, 0x04258e80, 900  ]
+        - [ bytes32, 0x040c0e7c, 1600 ]
+        - [ bytes32, 0x040c0e80, 900  ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.10"
+  app_titleid: *edrtitleid
+  app_elf: "eboot.bin"
+  patch_ver: "1.0"
+  name: "Resolution Patch (1080p for Pro)"
+  author: "illusion"
+  arch: orbis 
+  patch_list:
+        - [ bytes32, 0x0202898f, 1920 ]
+        - [ bytes32, 0x02028999, 1080 ]
+
+- patch:
+  title: *edrtitle
+  app_ver: "01.10"
+  app_titleid: *edrtitleid
+  app_elf: "eboot.bin"
+  patch_ver: "1.0"
+  name: "Skip Intro Logos"
+  author: "illusion"
+  arch: orbis
+  patch_list:
+        - [ byte, 0x01c7f1da, 0x1 ]
