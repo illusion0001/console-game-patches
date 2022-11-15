@@ -9,7 +9,7 @@
   note: "CPU Limited."
   arch: orbis
   patch_list:
-        - [ bytes, 0x00e6bf3d, "bf01000000" ]
+        - [ bytes32, 0x00e6bf3e, 0x00000001 ]
 
 - patch:
   title: "Grand Theft Auto V"
@@ -22,7 +22,7 @@
   note: "CPU Limited."
   arch: orbis
   patch_list:
-        - [ byte, 0x01533b5e, 0x1 ]
+        - [ bytes32, 0x01137b5e, 0x00000001 ]
 
 - patch:
   title: "Grand Theft Auto V"
@@ -34,5 +34,5 @@
   author: "illusion"
   arch: orbis
   patch_list:
-        - [ byte, 0x0333a794, 0x0 ]
-        - [ byte, 0x02c6afb8, 0x0 ]
+        - [ bytes32, 0x0333a794, 0x00000000 ]
+        - [ bytes32, 0x02c6afb8, 0x00000000 ]
