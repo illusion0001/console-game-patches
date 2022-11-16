@@ -11,7 +11,7 @@ File to be patched: `{{ page.dest_file }}`
 <details>
 <summary>Contents of patch file (Click to Expand)</summary>
 
-{% highlight yml %}
+{% highlight json %}
 {% flexible_include {{ page.patch_file }} %}
 {% endhighlight %}
 
