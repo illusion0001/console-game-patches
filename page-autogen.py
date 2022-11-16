@@ -1,14 +1,15 @@
 import glob
 from pathlib import Path
-import yaml
+import json
 
-for patches in glob.glob('_patch0/*/*.yml', recursive=True): 
+for patches in glob.glob('patches/json/*.json', recursive=True): 
     with open(patches, 'r') as file:
       md = open('_patch/_template.md', 'r')
       md_body = open('_patch/_template_body.md', 'r')
       template = md.read()
-      data = yaml.safe_load(file)
+      cont = json.load(file)
       blank = ''
+      data = cont['patch']
       title = data[0].get('title', blank)
       site_title = data[0].get('site_game_title', blank)
       extras = data[0].get('site_header_info', blank)
@@ -18,7 +19,7 @@ for patches in glob.glob('_patch0/*/*.yml', recursive=True):
       file_header = template.format(patches, title, extras, dest_patch)
       file_body = md_body.read()
       src = Path(patches).name
-      dest = src.replace('.yml', '.md')
+      dest = src.replace('.json', '.md')
       dest_path = f'_patch/{dest}'
       dest_cont = f'{file_header}{file_body}'
       dest_file = open(dest_path, 'w')
