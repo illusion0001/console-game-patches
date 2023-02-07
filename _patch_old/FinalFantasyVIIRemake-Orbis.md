@@ -6,8 +6,6 @@ title: "Final Fantasy VII: Remake"
 
 <!-- # {{ page.title }} -->
 
-{% include_relative index.md %}
-
 [Installation Guide](/install-instructions/)
 
 ## 60 FPS Unlock + Resolution Patch (ASM Ver.)
