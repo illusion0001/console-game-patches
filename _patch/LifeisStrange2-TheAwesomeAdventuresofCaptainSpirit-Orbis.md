@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 excerpt: "Game Patch"
 title: "The Awesome Adventures of Captain Spirit"
 ---

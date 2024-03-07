@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 excerpt: "Game Patch"
 title: "Fry Cry: New Dawn"
 ---

@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 excerpt: "Game Patch"
 title: "Kingdom Hearts III"
 ---

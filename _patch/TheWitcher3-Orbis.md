@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 excerpt: "Game Patch"
 title: "The Witcher 3"
 ---

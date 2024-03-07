@@ -1,6 +1,6 @@
 <!--
 ---
-# layout: single
+# layout: post
 excerpt: "Game Patch"
 # title: "The Last of Us: Remastered"
 ---

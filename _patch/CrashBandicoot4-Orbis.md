@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 excerpt: "Game Patch"
 title: "Crash Bandicoot 4: It's About Time"
 ---
